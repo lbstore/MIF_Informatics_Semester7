@@ -1,0 +1,20 @@
+Tam, kad matyti lietuviskus simbolius siame faile nustatykite failo koduote Windows-1257
+
+1. Kaip naudotis tiesioginio ar atbulinio iðvedimo programa?
+Paleidimas ið komandinës eilutës:
+python programos_vardas ávesties_failo_vardas ('FC' | 'BC')
+Pavyzdys:
+python main.py FC\testas1.txt FC
+
+2. Kaip keisti programos iðvedamø praneðimø formatus?
+'main.py' programoje yra 'msg*' kintamieji, kurie atsakingi uþ programø formatus, juos pakeitus galima reguliuoti spausdinamø praneðimø formuluotes.
+
+3. Kaip susigeneruoti visø testø ataskaità?
+Paleidimas ið komandinës eilutës:
+python programos_vardas
+Pavyzdys:
+python make.py
+Po programos ávykdymo paleidimo direktorijoje turëtø atsirasti failas pavadinimu 'ataskaita.html', já galima perþiûrëti su narðykle ir taip pat yra numatyta galimybë tiesiogiai kopijuoti ataskaitos failo turiná atidarytà ið narðyklës kopijuoti á tekstiná redaktoriø, pavyzdziui 'MS Word', su minimaliais iðkraipymais.
+
+4. Kaip perpaiðyti semantinius ir verifikavimo grafus?
+'draw.io' árankis atpaþásta FC-BC.xml failà ir atkuria programos bûsenà, kurioje yra uþkrauti minëtieji grafai ir galimos jø modifikacijos. 

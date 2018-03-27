@@ -1,0 +1,23 @@
+PART 1. Data
+	1) Rules:
+		R1: [A, D] -> Z
+		R2: [B, D] -> Z
+		R3: [C, D] -> Z
+		R4: [C, E] -> Y
+
+	2) Given facts:
+		C
+		D
+
+	3) Goal:
+		Y
+
+PART 2. Execution
+
+    1) .. Goal Y. Find R4: [C, E] -> Y. New goals:[C, E]
+    2) .. Goal C. Fact was given, DB:[C, D]
+    3) .... Goal E. No rules to deduce it. Backtracking. FAIL
+    4) .. Goal Y. No more rules to deduce it. Backtracking. FAIL
+
+PART 3. Results
+	1) Y was not deduced

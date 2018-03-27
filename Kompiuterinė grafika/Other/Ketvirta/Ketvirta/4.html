@@ -1,0 +1,273 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cylinder</title>
+        <meta charset="utf-8">
+</head>
+ 
+    <body>
+        <div id="container"></div>
+    </body>
+ 
+    <script src="js/three.min.js"></script>
+    <script src="js/TrackballControls.js"></script>
+	<script src="js/dat.gui.js"></script>
+    <script src="figure.js"></script>
+ 
+    <script type="x-shader/x-vertex" id="vertexShader1">
+
+	precision mediump float;
+
+	const int count1 = 4;
+	const int count2 = 6;
+	const vec3 e1 = vec3(1.0, 0.0, 0.0); 
+	const vec3 e2 = vec3(0.0, 1.0, 0.0); 
+	const vec3 e3 = vec3(0.0, 0.0, 1.0); 
+    
+//	uniform float m;	
+	uniform float c;
+
+	varying vec2 vUv;
+	varying vec3 vecPos;
+	varying vec3 vecNormal; 
+
+	void main(void) {
+    	vUv = uv;
+        float s = uv.x;
+        float t = uv.y;
+
+    	vec4 p[count1];
+    	vec3 n[count1];
+		  float sign_ = 1.; 
+        p[0] = vec4(-5.0 * e1 - 10.0 * e2,1.0); 
+        p[1] = vec4( 5.0 * e1 - 10.0 * e2,1.0); 
+        p[2] = vec4(-5.0 * e1 - c * e2, 1.0); 
+        p[3] = vec4( 5.0 * e1 - c * e2, 1.0);
+
+		n[0] = sign_*cross(p[1].xyz-p[0].xyz,p[2].xyz-p[0].xyz); 
+        n[1] = sign_*cross(p[1].xyz-p[0].xyz,p[3].xyz-p[1].xyz);  
+        n[2] = sign_*cross(p[3].xyz-p[2].xyz,p[2].xyz-p[0].xyz);  
+        n[3] = sign_*cross(p[3].xyz-p[2].xyz,p[3].xyz-p[1].xyz);  
+		
+    	vec4 p01 = mix(p[0], p[1], s);
+    	vec4 p23 = mix(p[2], p[3], s);
+    	vec4 surf = mix(p01, p23, t);
+    
+    	vec3 n01 = mix(n[0], n[1], s);
+    	vec3 n23 = mix(n[2], n[3], s);
+    	vec3 nor = normalize(mix(n01, n23, t));
+
+	    vecPos = (viewMatrix * modelMatrix * vec4(surf.xyz, 1.0 )).xyz;
+	    vecNormal = normalMatrix * nor;    
+		gl_Position = projectionMatrix * vec4(vecPos, 1.0 );
+	}
+    </script>
+
+    <script type="x-shader/x-vertex" id="vertexShader2">
+
+	precision mediump float;
+
+	const int count1 = 4;
+	const int count2 = 6;
+	const float weight = 0.7071;
+	const vec3 e1 = vec3(1.0, 0.0, 0.0); //1.0 0.0 0.0
+	const vec3 e2 = vec3(0.0, 1.0, 0.0); //0.0 1.0 0.0
+	const vec3 e3 = vec3(0.0, 0.0, -1.0); //0.0 0.0 1.0
+    
+	uniform float m;	
+	uniform float c;
+
+	varying vec2 vUv;
+	varying vec3 vecPos;
+	varying vec3 vecNormal; 
+
+	void main(void) {
+    	vUv = uv;
+        float s = uv.x;
+        float t = uv.y;
+
+    	vec4 p[count2];
+    	vec4 n[3];
+		
+		float sign_ = 1.; 
+        
+        p[0] = vec4(-5.0 * e1 - c * e2,1.0); 
+        p[1] = vec4( 5.0 * e1 - c * e2,1.0); 
+        p[2] = vec4(-5.0 * e1 + 5.0 * e2, 1.0); 
+        p[3] = vec4( 5.0 * e1 + 5.0 * e2, 1.0);
+        p[4] = vec4(-5.0 * e1 + 5.0 * e2 - (5.0+c) * e3, 1.0); 
+        p[5] = vec4( 5.0 * e1 + 5.0 * e2 - (5.0+c) * e3, 1.0);
+
+
+		n[0] = vec4(sign_ * e3, 1.0); 
+        n[1] = vec4(sign_ * (e2 + e3), 1.0);  
+        n[2] = vec4(sign_ * e2, 1.0);  
+
+    	vec4 p_0 = mix(p[0], p[1], s);
+    	vec4 p_1 = mix(p[2], p[3], s);
+    	vec4 p_2 = mix(p[4], p[5], s);
+    	vec4 p_01 = mix(p_0, weight * p_1, t);
+    	vec4 p_12 = mix(weight * p_1, p_2, t);
+
+    	vec4 surf = mix(p_01, p_12, t);
+    
+    	vec4 n01 = mix(n[0], weight * n[1], t);
+    	vec4 n23 = mix(weight * n[1], n[2], t);
+    	vec4 nor_ = mix(n01, n23, t);
+    	vec3 nor = normalize((1./nor_.w) * nor_.xyz);
+
+	    vecPos = (viewMatrix * modelMatrix * surf).xyz;
+	    vecNormal = normalMatrix * nor;    
+		gl_Position = projectionMatrix * vec4(vecPos, 1.0 );
+	}
+    </script>
+ 
+    <script type="x-shader/x-vertex" id="fragmentShader">
+	varying vec2 vUv;
+	varying vec3 vecPos;
+	varying vec3 vecNormal; 
+
+	vec3 checker(vec2 tex) {
+	  float size = 12.0;
+	  float res = mod(floor(size * tex.x) + floor(size * tex.y), 2.0);
+ 	  if (res < 1.0) {
+    	return vec3(0.0, 0.9, 0.9);  // turquiose
+  		} else {
+    	return vec3(0.9, 0.0, 0.9);  // magenta
+  	    }
+    }
+
+	void main() {
+    	vec3 cyanColor = vec3(0.9,0.9,0.9);    	
+        vec3 nNormal = normalize(vecNormal);        
+		vec3 ambColor = vec3(0.2,0.2,0.2);
+      	vec3 diffColor = vec3(0.8,0.8,0.8);
+		vec3 specColor = vec3(1.0,0.9,0.9);
+        float shininess = 32.0;
+		// vec3 lightDir = normalize(vec3(-0.4,-0.2,-1.0));  
+	    vec3 lightPos = 10.0 * vec3(0.1,0.2,1.0); 
+		vec3 lightDir = -normalize(lightPos - vecPos);   
+		float diffLightWeight = max(dot(nNormal,-lightDir),0.0);		
+        vec3 eyeDir = normalize(-vecPos);
+        vec3 reflDir = reflect(lightDir, nNormal);
+        //vec3 halfVec = normalize(-lightDir + eyeDir);
+        float specLightWeight = pow(max(dot(reflDir, eyeDir), 0.0), shininess);
+        //float specLightWeight = pow(max(dot(halfVec, nNormal), 0.0), shininess);
+		vec3 lightWeight = ambColor + diffColor * diffLightWeight 
+			+ specColor * specLightWeight;                
+//	    gl_FragColor = vec4(lightWeight * checker(vUv), 1.0);	 
+	    gl_FragColor = vec4(lightWeight * vec3(0.0, 0.9, 0.9), 1.0);	 
+	}
+    </script>
+ 
+    <script type="text/javascript" id="mainCode">
+ 
+ var
+	control,    
+	container, 
+    renderer, 
+    scene, 
+    camera, 
+    mesh, 
+    start = Date.now(),
+    fov = 30;
+ 
+window.addEventListener( 'load', function() {
+ 
+    container = document.getElementById( "container" );
+     
+    scene = new THREE.Scene();
+ 
+    camera = new THREE.PerspectiveCamera( 
+        fov, 
+        window.innerWidth / window.innerHeight, 
+        1, 
+        10000 );
+    camera.position.z = 50;
+    camera.target = new THREE.Vector3( 0, 0, 0 );
+ 
+    scene.add( camera );
+    
+// Menu     
+    control = new function() {
+        this.m = 15.0;
+        this.c = 0.0;
+		this.wire = false;
+    }
+	var gui = new dat.GUI();
+    gui.add(control, 'm', 10.0,30.0);    
+    gui.add(control, 'c',-5.0,5.0);
+    gui.add(control, 'wire').onChange(function (e) {
+        material1.wireframe = e;
+        material2.wireframe = e;
+    });     
+
+// Material
+    material1 = new THREE.ShaderMaterial( {
+        uniforms: { 
+			c: {type: 'f', value:  5.0} 
+        },
+        vertexShader: document.getElementById( 'vertexShader1' ).textContent,
+        fragmentShader: document.getElementById( 'fragmentShader' ).textContent  
+    } );
+    material1.wireframeLinewidth = 1;
+	material1.side = THREE.DoubleSide;
+
+    material2 = new THREE.ShaderMaterial( {
+        uniforms: { 
+			c: {type: 'f', value:  5.0} 
+        },
+        vertexShader: document.getElementById( 'vertexShader2' ).textContent,
+        fragmentShader: document.getElementById( 'fragmentShader' ).textContent  
+    } );
+    material2.wireframeLinewidth = 1;
+	material2.side = THREE.DoubleSide;
+     
+// Mesh
+
+
+    mesh1 = new THREE.Mesh( 
+        new THREE.PlaneGeometry( 20, 20, 64, 64 ), 
+        material1 
+    );
+	scene.add( mesh1 );
+
+    mesh2 = new THREE.Mesh( 
+        new THREE.PlaneGeometry( 20, 20, 64, 64 ), 
+        material2 
+    );
+	scene.add( mesh2 );
+
+    /*mesh3 = new THREE.Mesh( 
+        new THREE.PlaneGeometry( 20, 20, 1, 1 ), 
+        material3 
+    );
+    scene.add( mesh3 );*/
+
+
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+     
+    container.appendChild( renderer.domElement );
+	controls = new THREE.TrackballControls( camera, renderer.domElement );     
+    render();
+ 
+} );
+ 
+function render() {
+
+	// Update uniform
+    material1.uniforms.c.value = control.c; 
+    material2.uniforms.c.value = control.c; 
+
+    // render
+    renderer.render( scene, camera );
+    requestAnimationFrame( render );
+    controls.update(); 
+}
+
+    </script>
+ 
+</html>

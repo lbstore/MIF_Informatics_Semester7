@@ -1,0 +1,24 @@
+PART 1. Data
+	1) Rules:
+		R1: [C, D] -> Z
+		R2: [T] -> C
+		R3: [T] -> Z
+
+	2) Given facts:
+		T
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+
+1 ITERATION
+R1: [C, D] -> Z skip, missing C
+R2: [T] -> C apply, DB:[C, T]
+R3: [T] -> Z apply, DB:[C, T, Z]
+Goal found, terminating
+
+PART 3. Results
+	1) Z was deduced
+	2) Path: [R2, R3]

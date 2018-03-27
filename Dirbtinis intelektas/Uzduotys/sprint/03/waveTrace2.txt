@@ -1,0 +1,633 @@
+Parameters [String] labyrinth file, [Boolean] use wave method, [String] file output
+Default: lab.txt,false,null
+Data:
+  Y
+  ^
+16 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+15 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1
+14 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+13 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+12 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  0,  0,  0,  0,  0,  0,  0,  1,  1
+11 |  1,  1,  0,  0,  1,  1,  1,  1,  0,  1,  1,  0,  0,  1,  1,  0,  1,  0,  1,  1
+10 |  1,  1,  0,  0,  0,  0,  2,  0,  0,  1,  1,  0,  0,  1,  1,  0,  0,  0,  1,  1
+ 9 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1
+ 8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1
+ 7 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1
+ 6 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+ 5 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+ 4 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  0,  0,  0,  0,  0,  0,  0,  1,  1
+ 3 |  1,  1,  0,  0,  1,  1,  1,  1,  0,  1,  1,  0,  0,  1,  1,  0,  1,  0,  1,  1
+ 2 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  1,  1,  0,  0,  0,  1,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+      1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+Wave: 1
+	 Close 1 [7 10]
+		R1[6 10] EMPTY OPEN 1 Pos=[6 10]
+		R2[7 11] WALL
+		R3[8 10] EMPTY OPEN 2 Pos=[8 10]
+		R4[7 9] WALL
+Wave: 2
+	 Close 2 [6 10]
+		R1[5 10] EMPTY OPEN 3 Pos=[5 10]
+		R2[6 11] WALL
+		R3[7 10] VISITED
+		R4[6 9] WALL
+	 Close 3 [8 10]
+		R1[7 10] VISITED
+		R2[8 11] WALL
+		R3[9 10] EMPTY OPEN 4 Pos=[9 10]
+		R4[8 9] WALL
+Wave: 3
+	 Close 4 [5 10]
+		R1[4 10] EMPTY OPEN 5 Pos=[4 10]
+		R2[5 11] WALL
+		R3[6 10] VISITED
+		R4[5 9] WALL
+	 Close 5 [9 10]
+		R1[8 10] VISITED
+		R2[9 11] EMPTY OPEN 6 Pos=[9 11]
+		R3[10 10] WALL
+		R4[9 9] WALL
+Wave: 4
+	 Close 6 [4 10]
+		R1[3 10] EMPTY OPEN 7 Pos=[3 10]
+		R2[4 11] EMPTY OPEN 8 Pos=[4 11]
+		R3[5 10] VISITED
+		R4[4 9] WALL
+	 Close 7 [9 11]
+		R1[8 11] WALL
+		R2[9 12] EMPTY OPEN 9 Pos=[9 12]
+		R3[10 11] WALL
+		R4[9 10] VISITED
+Wave: 5
+	 Close 8 [3 10]
+		R1[2 10] WALL
+		R2[3 11] EMPTY OPEN 10 Pos=[3 11]
+		R3[4 10] VISITED
+		R4[3 9] WALL
+	 Close 9 [4 11]
+		R1[3 11] VISITED
+		R2[4 12] WALL
+		R3[5 11] WALL
+		R4[4 10] VISITED
+	 Close 10 [9 12]
+		R1[8 12] WALL
+		R2[9 13] EMPTY OPEN 11 Pos=[9 13]
+		R3[10 12] WALL
+		R4[9 11] VISITED
+Wave: 6
+	 Close 11 [3 11]
+		R1[2 11] WALL
+		R2[3 12] EMPTY OPEN 12 Pos=[3 12]
+		R3[4 11] VISITED
+		R4[3 10] VISITED
+	 Close 12 [9 13]
+		R1[8 13] WALL
+		R2[9 14] EMPTY OPEN 13 Pos=[9 14]
+		R3[10 13] WALL
+		R4[9 12] VISITED
+Wave: 7
+	 Close 13 [3 12]
+		R1[2 12] WALL
+		R2[3 13] EMPTY OPEN 14 Pos=[3 13]
+		R3[4 12] WALL
+		R4[3 11] VISITED
+	 Close 14 [9 14]
+		R1[8 14] WALL
+		R2[9 15] EMPTY OPEN 15 Pos=[9 15]
+		R3[10 14] WALL
+		R4[9 13] VISITED
+Wave: 8
+	 Close 15 [3 13]
+		R1[2 13] WALL
+		R2[3 14] EMPTY OPEN 16 Pos=[3 14]
+		R3[4 13] WALL
+		R4[3 12] VISITED
+	 Close 16 [9 15]
+		R1[8 15] EMPTY OPEN 17 Pos=[8 15]
+		R2[9 16] WALL
+		R3[10 15] EMPTY OPEN 18 Pos=[10 15]
+		R4[9 14] VISITED
+Wave: 9
+	 Close 17 [3 14]
+		R1[2 14] WALL
+		R2[3 15] EMPTY OPEN 19 Pos=[3 15]
+		R3[4 14] WALL
+		R4[3 13] VISITED
+	 Close 18 [8 15]
+		R1[7 15] EMPTY OPEN 20 Pos=[7 15]
+		R2[8 16] WALL
+		R3[9 15] VISITED
+		R4[8 14] WALL
+	 Close 19 [10 15]
+		R1[9 15] VISITED
+		R2[10 16] WALL
+		R3[11 15] EMPTY OPEN 21 Pos=[11 15]
+		R4[10 14] WALL
+Wave: 10
+	 Close 20 [3 15]
+		R1[2 15] WALL
+		R2[3 16] WALL
+		R3[4 15] EMPTY OPEN 22 Pos=[4 15]
+		R4[3 14] VISITED
+	 Close 21 [7 15]
+		R1[6 15] EMPTY OPEN 23 Pos=[6 15]
+		R2[7 16] WALL
+		R3[8 15] VISITED
+		R4[7 14] WALL
+	 Close 22 [11 15]
+		R1[10 15] VISITED
+		R2[11 16] WALL
+		R3[12 15] EMPTY OPEN 24 Pos=[12 15]
+		R4[11 14] WALL
+Wave: 11
+	 Close 23 [4 15]
+		R1[3 15] VISITED
+		R2[4 16] WALL
+		R3[5 15] EMPTY OPEN 25 Pos=[5 15]
+		R4[4 14] WALL
+	 Close 24 [6 15]
+		R1[5 15] VISITED
+		R2[6 16] WALL
+		R3[7 15] VISITED
+		R4[6 14] WALL
+	 Close 25 [12 15]
+		R1[11 15] VISITED
+		R2[12 16] WALL
+		R3[13 15] EMPTY OPEN 26 Pos=[13 15]
+		R4[12 14] WALL
+Wave: 12
+	 Close 26 [5 15]
+		R1[4 15] VISITED
+		R2[5 16] WALL
+		R3[6 15] VISITED
+		R4[5 14] WALL
+	 Close 27 [13 15]
+		R1[12 15] VISITED
+		R2[13 16] WALL
+		R3[14 15] EMPTY OPEN 27 Pos=[14 15]
+		R4[13 14] WALL
+Wave: 13
+	 Close 28 [14 15]
+		R1[13 15] VISITED
+		R2[14 16] WALL
+		R3[15 15] EMPTY OPEN 28 Pos=[15 15]
+		R4[14 14] WALL
+Wave: 14
+	 Close 29 [15 15]
+		R1[14 15] VISITED
+		R2[15 16] WALL
+		R3[16 15] EMPTY OPEN 29 Pos=[16 15]
+		R4[15 14] WALL
+Wave: 15
+	 Close 30 [16 15]
+		R1[15 15] VISITED
+		R2[16 16] WALL
+		R3[17 15] EMPTY OPEN 30 Pos=[17 15]
+		R4[16 14] WALL
+Wave: 16
+	 Close 31 [17 15]
+		R1[16 15] VISITED
+		R2[17 16] WALL
+		R3[18 15] EMPTY OPEN 31 Pos=[18 15]
+		R4[17 14] WALL
+Wave: 17
+	 Close 32 [18 15]
+		R1[17 15] VISITED
+		R2[18 16] WALL
+		R3[19 15] WALL
+		R4[18 14] EMPTY OPEN 32 Pos=[18 14]
+Wave: 18
+	 Close 33 [18 14]
+		R1[17 14] WALL
+		R2[18 15] VISITED
+		R3[19 14] WALL
+		R4[18 13] EMPTY OPEN 33 Pos=[18 13]
+Wave: 19
+	 Close 34 [18 13]
+		R1[17 13] WALL
+		R2[18 14] VISITED
+		R3[19 13] WALL
+		R4[18 12] EMPTY OPEN 34 Pos=[18 12]
+Wave: 20
+	 Close 35 [18 12]
+		R1[17 12] EMPTY OPEN 35 Pos=[17 12]
+		R2[18 13] VISITED
+		R3[19 12] WALL
+		R4[18 11] EMPTY OPEN 36 Pos=[18 11]
+Wave: 21
+	 Close 36 [17 12]
+		R1[16 12] EMPTY OPEN 37 Pos=[16 12]
+		R2[17 13] WALL
+		R3[18 12] VISITED
+		R4[17 11] WALL
+	 Close 37 [18 11]
+		R1[17 11] WALL
+		R2[18 12] VISITED
+		R3[19 11] WALL
+		R4[18 10] EMPTY OPEN 38 Pos=[18 10]
+Wave: 22
+	 Close 38 [16 12]
+		R1[15 12] EMPTY OPEN 39 Pos=[15 12]
+		R2[16 13] WALL
+		R3[17 12] VISITED
+		R4[16 11] EMPTY OPEN 40 Pos=[16 11]
+	 Close 39 [18 10]
+		R1[17 10] EMPTY OPEN 41 Pos=[17 10]
+		R2[18 11] VISITED
+		R3[19 10] WALL
+		R4[18 9] WALL
+Wave: 23
+	 Close 40 [15 12]
+		R1[14 12] EMPTY OPEN 42 Pos=[14 12]
+		R2[15 13] WALL
+		R3[16 12] VISITED
+		R4[15 11] WALL
+	 Close 41 [16 11]
+		R1[15 11] WALL
+		R2[16 12] VISITED
+		R3[17 11] WALL
+		R4[16 10] EMPTY OPEN 43 Pos=[16 10]
+	 Close 42 [17 10]
+		R1[16 10] VISITED
+		R2[17 11] WALL
+		R3[18 10] VISITED
+		R4[17 9] WALL
+Wave: 24
+	 Close 43 [14 12]
+		R1[13 12] EMPTY OPEN 44 Pos=[13 12]
+		R2[14 13] WALL
+		R3[15 12] VISITED
+		R4[14 11] WALL
+	 Close 44 [16 10]
+		R1[15 10] WALL
+		R2[16 11] VISITED
+		R3[17 10] VISITED
+		R4[16 9] WALL
+Wave: 25
+	 Close 45 [13 12]
+		R1[12 12] EMPTY OPEN 45 Pos=[12 12]
+		R2[13 13] WALL
+		R3[14 12] VISITED
+		R4[13 11] EMPTY OPEN 46 Pos=[13 11]
+Wave: 26
+	 Close 46 [12 12]
+		R1[11 12] WALL
+		R2[12 13] WALL
+		R3[13 12] VISITED
+		R4[12 11] EMPTY OPEN 47 Pos=[12 11]
+	 Close 47 [13 11]
+		R1[12 11] VISITED
+		R2[13 12] VISITED
+		R3[14 11] WALL
+		R4[13 10] EMPTY OPEN 48 Pos=[13 10]
+Wave: 27
+	 Close 48 [12 11]
+		R1[11 11] WALL
+		R2[12 12] VISITED
+		R3[13 11] VISITED
+		R4[12 10] EMPTY OPEN 49 Pos=[12 10]
+	 Close 49 [13 10]
+		R1[12 10] VISITED
+		R2[13 11] VISITED
+		R3[14 10] WALL
+		R4[13 9] WALL
+Wave: 28
+	 Close 50 [12 10]
+		R1[11 10] WALL
+		R2[12 11] VISITED
+		R3[13 10] VISITED
+		R4[12 9] EMPTY OPEN 50 Pos=[12 9]
+Wave: 29
+	 Close 51 [12 9]
+		R1[11 9] WALL
+		R2[12 10] VISITED
+		R3[13 9] WALL
+		R4[12 8] EMPTY OPEN 51 Pos=[12 8]
+Wave: 30
+	 Close 52 [12 8]
+		R1[11 8] WALL
+		R2[12 9] VISITED
+		R3[13 8] WALL
+		R4[12 7] EMPTY OPEN 52 Pos=[12 7]
+Wave: 31
+	 Close 53 [12 7]
+		R1[11 7] EMPTY OPEN 53 Pos=[11 7]
+		R2[12 8] VISITED
+		R3[13 7] EMPTY OPEN 54 Pos=[13 7]
+		R4[12 6] WALL
+Wave: 32
+	 Close 54 [11 7]
+		R1[10 7] EMPTY OPEN 55 Pos=[10 7]
+		R2[11 8] WALL
+		R3[12 7] VISITED
+		R4[11 6] WALL
+	 Close 55 [13 7]
+		R1[12 7] VISITED
+		R2[13 8] WALL
+		R3[14 7] EMPTY OPEN 56 Pos=[14 7]
+		R4[13 6] WALL
+Wave: 33
+	 Close 56 [10 7]
+		R1[9 7] EMPTY OPEN 57 Pos=[9 7]
+		R2[10 8] WALL
+		R3[11 7] VISITED
+		R4[10 6] WALL
+	 Close 57 [14 7]
+		R1[13 7] VISITED
+		R2[14 8] WALL
+		R3[15 7] EMPTY OPEN 58 Pos=[15 7]
+		R4[14 6] WALL
+Wave: 34
+	 Close 58 [9 7]
+		R1[8 7] EMPTY OPEN 59 Pos=[8 7]
+		R2[9 8] WALL
+		R3[10 7] VISITED
+		R4[9 6] EMPTY OPEN 60 Pos=[9 6]
+	 Close 59 [15 7]
+		R1[14 7] VISITED
+		R2[15 8] WALL
+		R3[16 7] EMPTY OPEN 61 Pos=[16 7]
+		R4[15 6] WALL
+Wave: 35
+	 Close 60 [8 7]
+		R1[7 7] EMPTY OPEN 62 Pos=[7 7]
+		R2[8 8] WALL
+		R3[9 7] VISITED
+		R4[8 6] WALL
+	 Close 61 [9 6]
+		R1[8 6] WALL
+		R2[9 7] VISITED
+		R3[10 6] WALL
+		R4[9 5] EMPTY OPEN 63 Pos=[9 5]
+	 Close 62 [16 7]
+		R1[15 7] VISITED
+		R2[16 8] WALL
+		R3[17 7] EMPTY OPEN 64 Pos=[17 7]
+		R4[16 6] WALL
+Wave: 36
+	 Close 63 [7 7]
+		R1[6 7] EMPTY OPEN 65 Pos=[6 7]
+		R2[7 8] WALL
+		R3[8 7] VISITED
+		R4[7 6] WALL
+	 Close 64 [9 5]
+		R1[8 5] WALL
+		R2[9 6] VISITED
+		R3[10 5] WALL
+		R4[9 4] EMPTY OPEN 66 Pos=[9 4]
+	 Close 65 [17 7]
+		R1[16 7] VISITED
+		R2[17 8] WALL
+		R3[18 7] EMPTY OPEN 67 Pos=[18 7]
+		R4[17 6] WALL
+Wave: 37
+	 Close 66 [6 7]
+		R1[5 7] EMPTY OPEN 68 Pos=[5 7]
+		R2[6 8] WALL
+		R3[7 7] VISITED
+		R4[6 6] WALL
+	 Close 67 [9 4]
+		R1[8 4] WALL
+		R2[9 5] VISITED
+		R3[10 4] WALL
+		R4[9 3] EMPTY OPEN 69 Pos=[9 3]
+	 Close 68 [18 7]
+		R1[17 7] VISITED
+		R2[18 8] WALL
+		R3[19 7] EMPTY OPEN 70 Pos=[19 7]
+		R4[18 6] EMPTY OPEN 71 Pos=[18 6]
+Wave: 38
+	 Close 69 [5 7]
+		R1[4 7] EMPTY OPEN 72 Pos=[4 7]
+		R2[5 8] WALL
+		R3[6 7] VISITED
+		R4[5 6] WALL
+	 Close 70 [9 3]
+		R1[8 3] WALL
+		R2[9 4] VISITED
+		R3[10 3] WALL
+		R4[9 2] EMPTY OPEN 73 Pos=[9 2]
+	 Close 71 [19 7]
+		R1[18 7] VISITED
+		R2[19 8] WALL
+		R3[20 7] WALL
+		R4[19 6] WALL
+	 Close 72 [18 6]
+		R1[17 6] WALL
+		R2[18 7] VISITED
+		R3[19 6] WALL
+		R4[18 5] EMPTY OPEN 74 Pos=[18 5]
+Wave: 39
+	 Close 73 [4 7]
+		R1[3 7] EMPTY OPEN 75 Pos=[3 7]
+		R2[4 8] WALL
+		R3[5 7] VISITED
+		R4[4 6] WALL
+	 Close 74 [9 2]
+		R1[8 2] EMPTY OPEN 76 Pos=[8 2]
+		R2[9 3] VISITED
+		R3[10 2] WALL
+		R4[9 1] WALL
+	 Close 75 [18 5]
+		R1[17 5] WALL
+		R2[18 6] VISITED
+		R3[19 5] WALL
+		R4[18 4] EMPTY OPEN 77 Pos=[18 4]
+Wave: 40
+	 Close 76 [3 7]
+		R1[2 7] WALL
+		R2[3 8] WALL
+		R3[4 7] VISITED
+		R4[3 6] EMPTY OPEN 78 Pos=[3 6]
+	 Close 77 [8 2]
+		R1[7 2] EMPTY OPEN 79 Pos=[7 2]
+		R2[8 3] WALL
+		R3[9 2] VISITED
+		R4[8 1] WALL
+	 Close 78 [18 4]
+		R1[17 4] EMPTY OPEN 80 Pos=[17 4]
+		R2[18 5] VISITED
+		R3[19 4] WALL
+		R4[18 3] EMPTY OPEN 81 Pos=[18 3]
+Wave: 41
+	 Close 79 [3 6]
+		R1[2 6] WALL
+		R2[3 7] VISITED
+		R3[4 6] WALL
+		R4[3 5] EMPTY OPEN 82 Pos=[3 5]
+	 Close 80 [7 2]
+		R1[6 2] EMPTY OPEN 83 Pos=[6 2]
+		R2[7 3] WALL
+		R3[8 2] VISITED
+		R4[7 1] WALL
+	 Close 81 [17 4]
+		R1[16 4] EMPTY OPEN 84 Pos=[16 4]
+		R2[17 5] WALL
+		R3[18 4] VISITED
+		R4[17 3] WALL
+	 Close 82 [18 3]
+		R1[17 3] WALL
+		R2[18 4] VISITED
+		R3[19 3] WALL
+		R4[18 2] EMPTY OPEN 85 Pos=[18 2]
+Wave: 42
+	 Close 83 [3 5]
+		R1[2 5] WALL
+		R2[3 6] VISITED
+		R3[4 5] WALL
+		R4[3 4] EMPTY OPEN 86 Pos=[3 4]
+	 Close 84 [6 2]
+		R1[5 2] EMPTY OPEN 87 Pos=[5 2]
+		R2[6 3] WALL
+		R3[7 2] VISITED
+		R4[6 1] WALL
+	 Close 85 [16 4]
+		R1[15 4] EMPTY OPEN 88 Pos=[15 4]
+		R2[16 5] WALL
+		R3[17 4] VISITED
+		R4[16 3] EMPTY OPEN 89 Pos=[16 3]
+	 Close 86 [18 2]
+		R1[17 2] EMPTY OPEN 90 Pos=[17 2]
+		R2[18 3] VISITED
+		R3[19 2] WALL
+		R4[18 1] WALL
+Wave: 43
+	 Close 87 [3 4]
+		R1[2 4] WALL
+		R2[3 5] VISITED
+		R3[4 4] WALL
+		R4[3 3] EMPTY OPEN 91 Pos=[3 3]
+	 Close 88 [5 2]
+		R1[4 2] EMPTY OPEN 92 Pos=[4 2]
+		R2[5 3] WALL
+		R3[6 2] VISITED
+		R4[5 1] WALL
+	 Close 89 [15 4]
+		R1[14 4] EMPTY OPEN 93 Pos=[14 4]
+		R2[15 5] WALL
+		R3[16 4] VISITED
+		R4[15 3] WALL
+	 Close 90 [16 3]
+		R1[15 3] WALL
+		R2[16 4] VISITED
+		R3[17 3] WALL
+		R4[16 2] EMPTY OPEN 94 Pos=[16 2]
+	 Close 91 [17 2]
+		R1[16 2] VISITED
+		R2[17 3] WALL
+		R3[18 2] VISITED
+		R4[17 1] WALL
+Wave: 44
+	 Close 92 [3 3]
+		R1[2 3] WALL
+		R2[3 4] VISITED
+		R3[4 3] EMPTY OPEN 95 Pos=[4 3]
+		R4[3 2] EMPTY OPEN 96 Pos=[3 2]
+	 Close 93 [4 2]
+		R1[3 2] VISITED
+		R2[4 3] VISITED
+		R3[5 2] VISITED
+		R4[4 1] WALL
+	 Close 94 [14 4]
+		R1[13 4] EMPTY OPEN 97 Pos=[13 4]
+		R2[14 5] WALL
+		R3[15 4] VISITED
+		R4[14 3] WALL
+	 Close 95 [16 2]
+		R1[15 2] WALL
+		R2[16 3] VISITED
+		R3[17 2] VISITED
+		R4[16 1] WALL
+Wave: 45
+	 Close 96 [4 3]
+		R1[3 3] VISITED
+		R2[4 4] WALL
+		R3[5 3] WALL
+		R4[4 2] VISITED
+	 Close 97 [3 2]
+		R1[2 2] WALL
+		R2[3 3] VISITED
+		R3[4 2] VISITED
+		R4[3 1] WALL
+	 Close 98 [13 4]
+		R1[12 4] EMPTY OPEN 98 Pos=[12 4]
+		R2[13 5] WALL
+		R3[14 4] VISITED
+		R4[13 3] EMPTY OPEN 99 Pos=[13 3]
+Wave: 46
+	 Close 99 [12 4]
+		R1[11 4] WALL
+		R2[12 5] WALL
+		R3[13 4] VISITED
+		R4[12 3] EMPTY OPEN 100 Pos=[12 3]
+	 Close 100 [13 3]
+		R1[12 3] VISITED
+		R2[13 4] VISITED
+		R3[14 3] WALL
+		R4[13 2] EMPTY OPEN 101 Pos=[13 2]
+Wave: 47
+	 Close 101 [12 3]
+		R1[11 3] WALL
+		R2[12 4] VISITED
+		R3[13 3] VISITED
+		R4[12 2] EMPTY OPEN 102 Pos=[12 2]
+	 Close 102 [13 2]
+		R1[12 2] VISITED
+		R2[13 3] VISITED
+		R3[14 2] WALL
+		R4[13 1] WALL
+Wave: 48
+	 Close 103 [12 2]
+		R1[11 2] WALL
+		R2[12 3] VISITED
+		R3[13 2] VISITED
+		R4[12 1] EMPTY OPEN 103 Pos=[12 1] TERMINAL
+Wave trace
+  Y
+  ^
+16 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+15 |  1,  1, 11, 12, 13, 12, 11, 10,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,  1,  1
+14 |  1,  1, 10,  1,  1,  1,  1,  1,  8,  1,  1,  1,  1,  1,  1,  1,  1, 19,  1,  1
+13 |  1,  1,  9,  1,  1,  1,  1,  1,  7,  1,  1,  1,  1,  1,  1,  1,  1, 20,  1,  1
+12 |  1,  1,  8,  1,  1,  1,  1,  1,  6,  1,  1, 27, 26, 25, 24, 23, 22, 21,  1,  1
+11 |  1,  1,  7,  6,  1,  1,  1,  1,  5,  1,  1, 28, 27,  1,  1, 24,  1, 22,  1,  1
+10 |  1,  1,  6,  5,  4,  3,  2,  3,  4,  1,  1, 29, 28,  1,  1, 25, 24, 23,  1,  1
+ 9 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 30,  1,  1,  1,  1,  1,  1,  1,  1
+ 8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 31,  1,  1,  1,  1,  1,  1,  1,  1
+ 7 |  1,  1, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 33, 34, 35, 36, 37, 38, 39,  1
+ 6 |  1,  1, 42,  1,  1,  1,  1,  1, 36,  1,  1,  1,  1,  1,  1,  1,  1, 39,  1,  1
+ 5 |  1,  1, 43,  1,  1,  1,  1,  1, 37,  1,  1,  1,  1,  1,  1,  1,  1, 40,  1,  1
+ 4 |  1,  1, 44,  1,  1,  1,  1,  1, 38,  1,  1, 47, 46, 45, 44, 43, 42, 41,  1,  1
+ 3 |  1,  1, 45, 46,  1,  1,  1,  1, 39,  1,  1, 48, 47,  1,  1, 44,  1, 42,  1,  1
+ 2 |  1,  1, 46, 45, 44, 43, 42, 41, 40,  1,  1, 49, 48,  1,  1, 45, 44, 43,  1,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 50,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+      1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+
+Trace path
+
+  Y
+  ^
+16 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+15 |  1,  1,  0,  0,  0,  0,  0,  0,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,  1,  1
+14 |  1,  1,  0,  1,  1,  1,  1,  1,  8,  1,  1,  1,  1,  1,  1,  1,  1, 19,  1,  1
+13 |  1,  1,  0,  1,  1,  1,  1,  1,  7,  1,  1,  1,  1,  1,  1,  1,  1, 20,  1,  1
+12 |  1,  1,  0,  1,  1,  1,  1,  1,  6,  1,  1, 27, 26, 25, 24, 23, 22, 21,  1,  1
+11 |  1,  1,  0,  0,  1,  1,  1,  1,  5,  1,  1, 28,  0,  1,  1,  0,  1,  0,  1,  1
+10 |  1,  1,  0,  0,  0,  0,  2,  3,  4,  1,  1, 29,  0,  1,  1,  0,  0,  0,  1,  1
+ 9 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 30,  1,  1,  1,  1,  1,  1,  1,  1
+ 8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 31,  1,  1,  1,  1,  1,  1,  1,  1
+ 7 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0, 32, 33, 34, 35, 36, 37, 38,  0,  1
+ 6 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1, 39,  1,  1
+ 5 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1, 40,  1,  1
+ 4 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1, 47, 46, 45, 44, 43, 42, 41,  1,  1
+ 3 |  1,  1,  0,  0,  1,  1,  1,  1,  0,  1,  1, 48,  0,  1,  1,  0,  1,  0,  1,  1
+ 2 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  1,  1, 49,  0,  1,  1,  0,  0,  0,  1,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 50,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+      1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+
+Rules:[R1, R1, R4, R4, R4, R4, R4, R1, R1, R1, R1, R1, R1, R1, R1, R1, R2, R2, R2, R3, R3, R3, R3, R3, R3, R2, R2, R2, R2, R2, R1, R1, R1, R1, R1, R1, R2, R2, R2, R3, R3, R3, R3, R3, R3, R2, R2, R2]
+Positions: [[12 1], [12 2], [12 3], [12 4], [13 4], [14 4], [15 4], [16 4], [17 4], [18 4], [18 5], [18 6], [18 7], [17 7], [16 7], [15 7], [14 7], [13 7], [12 7], [12 8], [12 9], [12 10], [12 11], [12 12], [13 12], [14 12], [15 12], [16 12], [17 12], [18 12], [18 13], [18 14], [18 15], [17 15], [16 15], [15 15], [14 15], [13 15], [12 15], [11 15], [10 15], [9 15], [9 14], [9 13], [9 12], [9 11], [9 10], [8 10]]

@@ -1,0 +1,112 @@
+Parameters [String] labyrinth file, [Boolean] use wave method, [String] file output
+Default: lab.txt,false,null
+Data:
+  Y
+  ^
+ 7 |  1,  1,  1,  1,  1,  1,  0
+ 6 |  0,  0,  0,  0,  0,  0,  0
+ 5 |  1,  1,  1,  1,  0,  1,  1
+ 4 |  1,  0,  0,  0,  2,  1,  1
+ 3 |  1,  0,  1,  0,  0,  0,  1
+ 2 |  1,  0,  0,  0,  1,  0,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1
+  ------------------------------> X
+      1   2   3   4   5   6   7
+Wave: 1
+	 Close 1 [5 4]
+		R1[4 4] EMPTY OPEN 1 Pos=[4 4]
+		R2[5 5] EMPTY OPEN 2 Pos=[5 5]
+		R3[6 4] WALL
+		R4[5 3] EMPTY OPEN 3 Pos=[5 3]
+Wave: 2
+	 Close 2 [4 4]
+		R1[3 4] EMPTY OPEN 4 Pos=[3 4]
+		R2[4 5] WALL
+		R3[5 4] VISITED
+		R4[4 3] EMPTY OPEN 5 Pos=[4 3]
+	 Close 3 [5 5]
+		R1[4 5] WALL
+		R2[5 6] EMPTY OPEN 6 Pos=[5 6]
+		R3[6 5] WALL
+		R4[5 4] VISITED
+	 Close 4 [5 3]
+		R1[4 3] VISITED
+		R2[5 4] VISITED
+		R3[6 3] EMPTY OPEN 7 Pos=[6 3]
+		R4[5 2] WALL
+Wave: 3
+	 Close 5 [3 4]
+		R1[2 4] EMPTY OPEN 8 Pos=[2 4]
+		R2[3 5] WALL
+		R3[4 4] VISITED
+		R4[3 3] WALL
+	 Close 6 [4 3]
+		R1[3 3] WALL
+		R2[4 4] VISITED
+		R3[5 3] VISITED
+		R4[4 2] EMPTY OPEN 9 Pos=[4 2]
+	 Close 7 [5 6]
+		R1[4 6] EMPTY OPEN 10 Pos=[4 6]
+		R2[5 7] WALL
+		R3[6 6] EMPTY OPEN 11 Pos=[6 6]
+		R4[5 5] VISITED
+	 Close 8 [6 3]
+		R1[5 3] VISITED
+		R2[6 4] WALL
+		R3[7 3] WALL
+		R4[6 2] EMPTY OPEN 12 Pos=[6 2]
+Wave: 4
+	 Close 9 [2 4]
+		R1[1 4] WALL
+		R2[2 5] WALL
+		R3[3 4] VISITED
+		R4[2 3] EMPTY OPEN 13 Pos=[2 3]
+	 Close 10 [4 2]
+		R1[3 2] EMPTY OPEN 14 Pos=[3 2]
+		R2[4 3] VISITED
+		R3[5 2] WALL
+		R4[4 1] WALL
+	 Close 11 [4 6]
+		R1[3 6] EMPTY OPEN 15 Pos=[3 6]
+		R2[4 7] WALL
+		R3[5 6] VISITED
+		R4[4 5] WALL
+	 Close 12 [6 6]
+		R1[5 6] VISITED
+		R2[6 7] WALL
+		R3[7 6] EMPTY OPEN 16 Pos=[7 6] TERMINAL
+		R4[6 5] WALL
+	 Close 13 [6 2]
+		R1[5 2] WALL
+		R2[6 3] VISITED
+		R3[7 2] WALL
+		R4[6 1] WALL
+Wave trace
+  Y
+  ^
+ 7 |  1,  1,  1,  1,  1,  1,  0
+ 6 |  0,  0,  6,  5,  4,  5,  6
+ 5 |  1,  1,  1,  1,  3,  1,  1
+ 4 |  1,  5,  4,  3,  2,  1,  1
+ 3 |  1,  6,  1,  4,  3,  4,  1
+ 2 |  1,  0,  6,  5,  1,  5,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1
+  ------------------------------> X
+      1   2   3   4   5   6   7
+
+Trace path
+
+  Y
+  ^
+ 7 |  1,  1,  1,  1,  1,  1,  0
+ 6 |  0,  0,  0,  0,  4,  5,  6
+ 5 |  1,  1,  1,  1,  3,  1,  1
+ 4 |  1,  0,  0,  0,  2,  1,  1
+ 3 |  1,  0,  1,  0,  0,  0,  1
+ 2 |  1,  0,  0,  0,  1,  0,  1
+ 1 |  1,  1,  1,  1,  1,  1,  1
+  ------------------------------> X
+      1   2   3   4   5   6   7
+
+Rules:[R4, R4, R1, R1]
+Positions: [[5 4], [5 5], [5 6], [6 6], [7 6]]

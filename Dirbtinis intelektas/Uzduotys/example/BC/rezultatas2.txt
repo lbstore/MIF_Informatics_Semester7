@@ -1,0 +1,52 @@
+1 DALIS. Duomenys
+
+  1) Taisykles:
+     R1: D, C -> Z
+     R2: C -> D
+     R3: B -> C
+     R4: A -> B
+     R5: D -> A
+     R6: T -> D
+     R7: G -> A
+     R8: H -> B
+     R9: J -> C
+
+  2) Faktai:
+     T
+
+  3) Tikslas:
+     Z
+
+2 DALIS. Vykdymas
+
+ 1).Tikslas Z. Randame R1:D,C->Z. Nauji tikslai D, C.
+ 2)..Tikslas D. Randame R2:C->D. Nauji tikslai C.
+ 3)...Tikslas C. Randame R3:B->C. Nauji tikslai B.
+ 4)....Tikslas B. Randame R4:A->B. Nauji tikslai A.
+ 5).....Tikslas A. Randame R5:D->A. Nauji tikslai D.
+ 6)......Tikslas D. Ciklas. Griztame, FAIL.
+ 7).....Tikslas A. Randame R7:G->A. Nauji tikslai G.
+ 8)......Tikslas G. Nera taisykliu jo isvedimui. Griztame, FAIL.
+ 9).....Tikslas A. Nera daugiau taisykliu jo isvedimui. Griztame, FAIL.
+10)....Tikslas B. Randame R8:H->B. Nauji tikslai H.
+11).....Tikslas H. Nera taisykliu jo isvedimui. Griztame, FAIL.
+12)....Tikslas B. Nera daugiau taisykliu jo isvedimui. Griztame, FAIL.
+13)...Tikslas C. Randame R9:J->C. Nauji tikslai J.
+14)....Tikslas J. Nera taisykliu jo isvedimui. Griztame, FAIL.
+15)...Tikslas C. Nera daugiau taisykliu jo isvedimui. Griztame, FAIL.
+16)..Tikslas D. Randame R6:T->D. Nauji tikslai T.
+17)...Tikslas T. Faktas (duotas), nes faktai T. Griztame, sekme.
+18)..Tikslas D. Faktas (dabar gautas). Faktai T ir D. Griztame, sekme.
+19)..Tikslas C. Randame R3:B->C. Nauji tikslai B.
+20)...Tikslas B. Randame R4:A->B. Nauji tikslai A.
+21)....Tikslas A. Randame R5:D->A. Nauji tikslai D.
+22).....Tikslas D. Faktas (buvo gautas), nes faktai T ir D. Griztame, sekme.
+23)....Tikslas A. Faktas (dabar gautas). Faktai T ir D, A. Griztame, sekme.
+24)...Tikslas B. Faktas (dabar gautas). Faktai T ir D, A, B. Griztame, sekme.
+25)..Tikslas C. Faktas (dabar gautas). Faktai T ir D, A, B, C. Griztame, sekme.
+26).Tikslas Z. Faktas (dabar gautas). Faktai T ir D, A, B, C, Z. Griztame, sekme.
+
+3 DALIS. Rezultatai
+  1) Tikslas Z isvestas.
+  2) Kelias R6, R5, R4, R3, R1.
+

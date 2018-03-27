@@ -1,0 +1,24 @@
+1 DALIS. Duomenys
+
+  1) Taisykles:
+     R1: A -> B
+     R2: C -> Z
+
+  2) Faktai:
+     A
+
+  3) Tikslas:
+     Z
+
+2 DALIS. Vykdymas
+
+  1 ITERACIJA
+    R1:A->B taikome. Pakeliame flag1. Faktai A ir B.
+
+  2 ITERACIJA
+    R1:A->B praleidziame, nes pakelta flag1.
+    R2:C->Z netaikome, nes truksta C.
+
+3 DALIS. Rezultatai
+  1) Tikslas Z neisvestas.
+

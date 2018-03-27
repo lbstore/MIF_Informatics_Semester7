@@ -1,0 +1,10 @@
+Linas Laibinis linas.laibinis@mif.vu.lt
+Funkcinis Programavimas
+
+Moodle kursas
+5-6 pratimai (2.5 svaitės)
+Galima atsiskaityti kelis pratimus iš karto.
+Pratybos 40%
+
+
+using Hakell

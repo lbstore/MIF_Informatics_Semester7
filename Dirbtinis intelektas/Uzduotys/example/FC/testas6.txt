@@ -1,0 +1,14 @@
+//Studentas Jonas Kristupas Rudzianskas, informatikos: kompiuteriu mokslo studiju programa, 4 kursas, 2 grupe
+//6 testas. Negnevitsky pavyzdys (5 produkcijos, p.37)
+//1) Taisykles:
+Z Y D   // R1: Y, D -> Z
+Y X B E // R2: X, B, E -> Y
+X A     // R3: A -> X
+L C     // R4: C -> L
+N L M   // R5: L, M -> N
+
+//2) Faktai:
+A B C D E
+
+//3) Tiklas:
+Z

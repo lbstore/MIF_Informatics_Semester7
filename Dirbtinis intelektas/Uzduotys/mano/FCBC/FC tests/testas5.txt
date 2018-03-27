@@ -1,0 +1,11 @@
+//Studentas Laimonas Beniušis, informatikos: kompiuterių mokslo studijų programa, 4 kursas, 1 grupė
+//5 testas. Kelias neegzistuoja
+//1) Taisyklės:
+B A // R1: A -> B
+Z C // R2: C -> Z
+
+//2) Faktai:
+A
+
+//3) Tikslas:
+Z

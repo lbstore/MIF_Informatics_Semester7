@@ -1,0 +1,15 @@
+Studentë Samanta Aèaitë bioinformatika 4 kursas.
+7 testas. Negnevitsky pavyzdys
+ 
+1) Taisykles
+Z Y D    //R1 : D, Y -> Z
+Y X B E  //R2 : E, B, X -> Y
+X A      //R3 : A -> X
+L C      //R4 : C -> L
+N L M    //R5 : M, L -> N
+
+2) Faktai
+A B C D E
+ 
+3) Tikslas
+Z

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Teapot Texture</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        
+        <script src="js/threePatched.js"></script>
+        <script src="js/dat.gui.min.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        
+        <!--procedural texture shaders-->
+        
+        <script type="x-shader/x-vertex" id="vertexShaderNormal">
+
+            precision mediump float;
+
+            varying vec3 vNormal;
+            varying vec3 vTangent; 
+            varying vec2 vUv;
+            
+            varying vec3 vPosition; 
+            varying vec3 vPosInCamera;
+            void main(void) {
+                vUv = uv;
+                vNormal = normalMatrix * normal;
+                vPosition = position;
+                vPosInCamera = (viewMatrix * modelMatrix * vec4(position, 1.0 )).xyz;
+                
+                vTangent = (modelViewMatrix * vec4(1.0, 0.0, 0.0, 0.0 )).xyz;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0 );
+
+            }
+        </script>
+ 
+        <script type="x-shader/x-vertex" id="fragmentShaderNormalTop">
+            precision mediump float;	
+
+            varying vec3 vNormal; 
+            varying vec3 vTangent; 
+            varying vec2 vUv;
+
+
+            varying vec3 vPosition; 
+            varying vec3 vPosInCamera;	
+            
+            struct DirectionalLight {
+                        vec3 direction;
+                        vec3 color;
+                        int shadow;
+                        float shadowBias;
+                        float shadowRadius;
+                        vec2 shadowMapSize;
+                     };
+            uniform DirectionalLight directionalLights[ NUM_DIR_LIGHTS ];
+            uniform vec3 ambientLightColor;
+
+            float sq(float f){
+                return f*f;
+            }
+            
+            float curveLeft(float x){
+                return 1.0- pow(x,1.5);
+            }
+            float curveRight(float x){
+                float b = pow(x,1.5);
+                return b;
+            }
+            
+            
+            float sq3(float x){
+                return x*x*x;
+            }
+            float sq2(float x){
+                return x*x;
+            }
+            float curve(float x){
+                float a = -0.15;
+                float b = 0.05;
+                float c = 0.94;
+                float g = 1.0;
+                float xm = (1.0 - x);
+                return a*sq3(xm) + 3.0*b*sq2(xm) + 3.0*c*(xm)*sq2(x) + g*sq3(x);  
+            }
+            
+            float curveInv(float x){
+                return -1.0 * curve(x) + 1.0;
+            }
+            
+            float curveLinear(float x){
+                return x;
+            }
+            float curveLinearInv(float x){
+                return -x + 1.0;
+            }
+            
+           
+            vec3 getCircleNormalMap(float scale, vec2 offset){
+                 // normal map computation
+		//vNormal = normalize(vNormal);
+		//vTangent = normalize(vTangent);
+		vec3 biTangent = cross(vNormal,vTangent);
+                float u = (vUv.x - 0.5 + offset.x)*scale;
+                float v = (vUv.y - 0.5+offset.y)*scale;
+                float h = 1.0 - u*u - v*v; 
+                vec3 map = normalize(vNormal); 
+                if ( h > 0.0 )  
+                    map = sqrt(h)*vNormal + u*vTangent + v*biTangent;
+                return map;
+            }
+            
+            vec3 getPyramidNormalMap(float scale, vec2 offset){
+                
+                vec3 biTangent = cross(vNormal,vTangent);
+                vec3 normalMap;
+                float x = offset.x+vUv.x*scale;
+                float y = offset.y+vUv.y*scale;
+                float L = 0.8;
+                x = fract(x);
+                y = fract(y);
+                normalMap = normalize(vNormal + L*vTangent); 
+                if ( x < y ){
+                    normalMap = normalize(vNormal - L*vTangent);
+                    if (x + y > 1.0){
+                        normalMap = normalize(vNormal + L*biTangent);
+                    }
+                }else if (x + y < 1.0){
+                    normalMap = normalize(vNormal - L*biTangent);
+                }
+                
+                return normalMap;
+            }
+            void main() {
+                // normal map computation
+                //vNormal = normalize(vNormal);
+                //vTangent = normalize(vTangent);
+                vec3 biTangent = cross(vNormal,vTangent);
+                float L = 0.2;
+                
+                
+                float x = vUv.x;
+                float y = vUv.y;
+                    
+                    
+                    
+                float cR = curveLinear(x);
+                float cL = curveLinearInv(x);
+                
+                
+                
+                bool west   = cR > y && cL < y;
+                bool east   = cR < y && cL > y;
+                bool north  = cR > y && cL < y;
+                bool south  = cR < y && cL > y;
+                
+                
+                
+                bool belowcL = y < cL;
+                bool belowcR = y < cR;
+                bool top = !belowcL && !belowcR;
+                bool bot = belowcL && belowcR;
+                
+                
+                
+                
+                vec3 normalMap;
+
+
+                normalMap = vec3(0.0,0.0,0.0);
+                if(x>0.5 && y < 0.5){
+                    vec2 offset = vec2(-0.25,0.25);
+                    normalMap = getCircleNormalMap(6.0,offset);
+                }else if(x < 0.5 && y > 0.5){
+                    vec2 offset = vec2(0.25,-0.25);
+                    normalMap = getCircleNormalMap(6.0,offset);
+                
+                }else{
+                    vec2 offset = vec2(0.0,0.0);
+                    normalMap = getPyramidNormalMap(2.0,offset);
+                }
+
+                vec4 sumDirLights = vec4(0.0, 0.0, 0.0, 1.0);
+                    for(int i = 0; i < NUM_DIR_LIGHTS; i++) {
+                        vec3 lightDir = directionalLights[i].direction;
+//                        sumDirLights.rgb += clamp(dot(dir, vNormal), 0.0, 1.0) * directionalLights[i].color;
+                        
+                        
+                        
+                        float uShininess = 0.5;
+//                        float diffLightWeight = max(dot(normalMap,lightDir),0.0);		
+                        vec3 eyeDir = normalize(-vPosInCamera);
+//                        vec3 eyeDir = normalize(lightDir);
+
+                        vec3 reflDir = -reflect(lightDir, normalMap);
+                        float specLightWeight = pow(max(dot(reflDir, eyeDir), 0.0), uShininess);
+//                        sumDirLights.rgb+= directionalLights[i].color * diffLightWeight + directionalLights[i].color * specLightWeight;
+                        sumDirLights.rgb+=  directionalLights[i].color * specLightWeight;
+                        
+                    }
+                    
+                    
+                sumDirLights.rgb+=ambientLightColor;
+                gl_FragColor = vec4(sumDirLights.rgb,1.0);   
+            }
+	</script>
+        <script type="x-shader/x-vertex" id="fragmentShaderNormalBot">
+            precision mediump float;	
+
+            varying vec3 vNormal; 
+            varying vec3 vTangent; 
+            varying vec2 vUv;
+
+
+            varying vec3 vPosition; 
+            varying vec3 vPosInCamera;	
+            
+            struct DirectionalLight {
+                        vec3 direction;
+                        vec3 color;
+                        int shadow;
+                        float shadowBias;
+                        float shadowRadius;
+                        vec2 shadowMapSize;
+                     };
+            uniform DirectionalLight directionalLights[ NUM_DIR_LIGHTS ];
+            uniform vec3 ambientLightColor;
+
+            void main() {
+                // normal map computation
+                //vNormal = normalize(vNormal);
+                //vTangent = normalize(vTangent);
+                vec3 biTangent = cross(vNormal,vTangent);
+                float L = 0.2;
+//                L = cos(vUv.y);
+                vec3 normalMap = normalize(vNormal + L*vTangent); 
+                if ( vUv.x < vUv.y )  {
+                    normalMap = normalize(vNormal - L*vTangent);
+                    if (vUv.x + vUv.y > 1.0){
+                        normalMap = normalize(vNormal + L*biTangent);
+                    }
+                } else if (vUv.x + vUv.y < 1.0){
+                    normalMap = normalize(vNormal - L*biTangent);
+                }
+                // lighting	 
+                vec3 lightDir = normalize(vec3(0.5,0.2,1.0)); 
+
+
+                vec3 specColor = vec3(0.4,0.4,0.3);
+
+                vec4 sumDirLights = vec4(0.0, 0.0, 0.0, 1.0);
+                    for(int i = 0; i < NUM_DIR_LIGHTS; i++) {
+                        vec3 dir = directionalLights[i].direction;
+                        lightDir = dir * vec3(1,-1,1);
+//                        sumDirLights.rgb += clamp(dot(dir, vNormal), 0.0, 1.0) * directionalLights[i].color;
+                        
+                        
+                        
+                        float uShininess = 0.5;
+//                        float diffLightWeight = max(dot(normalMap,lightDir),0.0);		
+                        vec3 eyeDir = normalize(-vPosInCamera);
+//                        vec3 eyeDir = normalize(lightDir);
+
+                        vec3 reflDir = -reflect(lightDir, normalMap);
+                        float specLightWeight = pow(max(dot(reflDir, eyeDir), 0.0), uShininess);
+//                        sumDirLights.rgb+= directionalLights[i].color * diffLightWeight + directionalLights[i].color * specLightWeight;
+                        sumDirLights.rgb+=  directionalLights[i].color * specLightWeight;
+                        
+                    }
+                    
+                    
+                sumDirLights.rgb+=ambientLightColor;
+                //bonus
+                
+                
+    //            float intensity = dot(lightDir,normalMap);
+                float intensity = dot(normalize(sumDirLights.rgb),normalMap);
+
+                vec3 color = vec3(intensity);
+                gl_FragColor = vec4(sumDirLights.rgb,1.0);   
+            }
+	</script>
+        <script src="js/teapotPhong.js"></script>
+    </body>
+</html>

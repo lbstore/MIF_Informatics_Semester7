@@ -1,0 +1,40 @@
+1 DALIS. Duomenys
+
+  1) Taisykles:
+     R1: D -> Z
+     R2: C -> D
+     R3: B -> C
+     R4: A -> B
+     R5: A -> G
+     R6: G -> Z
+
+  2) Faktai:
+     A
+
+  3) Tikslas:
+     Z
+
+2 DALIS. Vykdymas
+
+  1 ITERACIJA
+    R1:D->Z netaikome, nes truksta D.
+    R2:C->D netaikome, nes truksta C.
+    R3:B->C netaikome, nes truksta B.
+    R4:A->B taikome. Pakeliame flag1. Faktai A ir B.
+
+  2 ITERACIJA
+    R1:D->Z netaikome, nes truksta D.
+    R2:C->D netaikome, nes truksta C.
+    R3:B->C taikome. Pakeliame flag1. Faktai A ir B, C.
+
+  3 ITERACIJA
+    R1:D->Z netaikome, nes truksta D.
+    R2:C->D taikome. Pakeliame flag1. Faktai A ir B, C, D.
+
+  4 ITERACIJA
+    R1:D->Z taikome. Pakeliame flag1. Faktai A ir B, C, D, Z.
+
+3 DALIS. Rezultatai
+  1) Tikslas Z isvestas.
+  2) Kelias R4, R3, R2, R1.
+

@@ -1,0 +1,15 @@
+﻿//Studentas Laimonas Beniušis, informatikos: kompiuterių mokslo studijų programa, 4 kursas, 1 grupė
+//2 testas. Čyras vs Negnevitsky; Čyras laimi
+//1) Taisyklės:
+Z G // R1: G -> Z
+G A // R2: A -> G
+B A // R3: A -> B
+C B // R4: B -> C
+D C // R5: C -> D
+Z D // R6: D -> Z
+
+//2) Faktai:
+A
+
+//3) Tikslas:
+Z

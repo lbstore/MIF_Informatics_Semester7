@@ -1,0 +1,17 @@
+Studentë Samanta Aèaitë bioinformatika 4 kursas.
+2 testas. V. Èyro konspekto pavyzdys su septyniomis produkcijomis
+ 
+1) Taisyklës
+L A    //R1 : A -> L
+K L    //R2 : L -> K
+A D    //R3 : D -> A
+M D    //R4 : D -> M
+Z B F  //R5 : F, B -> Z
+F D C  //R6 : C, D -> F
+D A    //R7 : A -> D
+ 
+2) Faktai
+A B C
+ 
+3) Tikslas
+Z

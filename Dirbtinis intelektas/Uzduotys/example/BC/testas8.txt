@@ -1,0 +1,13 @@
+//Studentas Jonas Kristupas Rudzianskas, informatikos: kompiuteriu mokslo studiju programa, 4 kursas, 2 grupe
+//8 testas. Trys alternatyvos ir nepasiekiamas tikslas.
+//1) Taisykles:
+Z A D // R1: A, D -> Z
+Z B D // R2: B, D -> Z
+Z C D // R3: C, D -> Z
+Y C E // R4: C, E -> Y
+
+//2) Faktai:
+C D
+
+//3) Tikslas:
+Y

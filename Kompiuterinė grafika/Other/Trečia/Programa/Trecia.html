@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Example 01.05 - Control gui</title>
+    <script type="text/javascript" src="../libs/three.js"></script>
+    <script type="text/javascript" src="../libs/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="../libs/stats.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.js"></script>
+    <style>
+        body{
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Stats-output">
+</div>
+<!-- Div which will hold the Output -->
+<div id="WebGL-output">
+</div>
+
+<!-- Javascript code that runs our Three.js examples -->
+<script type="text/javascript">
+
+    // once everything is loaded, we run our Three.js stuff.
+    $(function () {
+
+        var stats = initStats();
+
+        // create a scene, that will hold all our elements such as objects, cameras and lights.
+        var scene = new THREE.Scene();
+
+        // create a camera, which defines where we're looking at.
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+        // create a render and set the size
+        var renderer = new THREE.WebGLRenderer();
+
+        renderer.setClearColorHex(0xEEEEEE, 1.0);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMapEnabled = true;
+
+        // create the ground plane
+        var planeGeometry = new THREE.PlaneGeometry(60,40,1,1);
+        var planeMaterial =    new THREE.MeshLambertMaterial({color: 0xffffff});
+        var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+        plane.receiveShadow  = true;
+
+        // rotate and position the plane
+        plane.rotation.x=-0.5*Math.PI;
+        plane.position.x=15
+        plane.position.y=0
+        plane.position.z=0
+
+        // add the plane to the scene
+        scene.add(plane);
+		
+		// camera
+		camera.position.x = -30;
+        camera.position.y = 40;
+        camera.position.z = 30;
+        camera.lookAt(scene.position);
+
+        // add subtle ambient lighting
+        var ambientLight = new THREE.AmbientLight(0x0c0c0c);
+        scene.add(ambientLight);
+
+        // add spotlight for the shadows
+        var spotLight = new THREE.SpotLight( 0xffffff );
+        spotLight.position.set( -40, 60, -10 );
+        spotLight.castShadow = true;
+        scene.add( spotLight );
+		
+		        // add the output of the renderer to the html element
+        $("#WebGL-output").append(renderer.domElement);
+
+        // mesh here 
+
+        var geometry = new THREE.Geometry();
+        var geometry1 = new THREE.Geometry();
+        var geometry2 = new THREE.Geometry();
+		var geometry3 = new THREE.Geometry();
+		var geometry4 = new THREE.Geometry();
+		var geometry5 = new THREE.Geometry();
+		var geometry6 = new THREE.Geometry();
+		{
+        geometry.vertices.push(
+            new THREE.Vector3(0,0,0), //0
+            new THREE.Vector3(0,6,0),//1
+            new THREE.Vector3(0,6,3),//2
+            new THREE.Vector3(0,0,3),//3
+            new THREE.Vector3(0,0,6),//4
+            new THREE.Vector3(0,3,6),//5
+            new THREE.Vector3(0,3,3),//6
+            new THREE.Vector3(3,0,0),//7
+            new THREE.Vector3(3,6,0),//8
+            new THREE.Vector3(3,6,3),//9
+            new THREE.Vector3(3,0,3),//10
+            new THREE.Vector3(3,0,6),//11
+            new THREE.Vector3(3,3,6),//12
+            new THREE.Vector3(3,3,3)//13
+			
+        );
+        
+        geometry.faces.push(
+            new THREE.Face3(0,2,1),
+            new THREE.Face3(0,3,2),
+            new THREE.Face3(6,9,2),
+            new THREE.Face3(6,13,9),
+            new THREE.Face3(10,8,9),
+            new THREE.Face3(10,7,8),
+            new THREE.Face3(7,1,8),
+            new THREE.Face3(7,0,1),
+            new THREE.Face3(9,1,2),
+            new THREE.Face3(9,8,1),
+            new THREE.Face3(10,3,0),
+            new THREE.Face3(10,0,7),
+            //first end the big one
+            new THREE.Face3(3,5,6),
+            new THREE.Face3(3,4,5),
+            new THREE.Face3(4,12,5),
+            new THREE.Face3(4,11,12),
+            new THREE.Face3(11,13,12),
+            new THREE.Face3(11,10,13),
+            new THREE.Face3(6,12,13),
+            new THREE.Face3(6,5,12),
+            new THREE.Face3(10,11,3),
+            new THREE.Face3(11,4,3)    
+        );
+		
+		geometry1.vertices.push(
+            new THREE.Vector3(0,0,0), //0
+            new THREE.Vector3(0,9,0),//1
+            new THREE.Vector3(0,9,3),//2
+            new THREE.Vector3(0,0,3),//3 ---
+            new THREE.Vector3(0,0,6),//4
+            new THREE.Vector3(0,3,6),//5
+            new THREE.Vector3(0,3,3),//6
+            new THREE.Vector3(3,0,0),//7
+            new THREE.Vector3(3,9,0),//8
+            new THREE.Vector3(3,9,3),//9
+            new THREE.Vector3(3,0,3),//10
+            new THREE.Vector3(3,0,6),//11
+            new THREE.Vector3(3,3,6),//12
+            new THREE.Vector3(3,3,3)//13
+        );
+
+        geometry1.faces.push( 
+            new THREE.Face3(0,2,1),
+            new THREE.Face3(0,3,2),
+            new THREE.Face3(6,9,2),
+            new THREE.Face3(6,13,9),
+            new THREE.Face3(10,8,9),
+            new THREE.Face3(10,7,8),
+            new THREE.Face3(7,1,8),
+            new THREE.Face3(7,0,1),
+            new THREE.Face3(9,1,2),
+            new THREE.Face3(9,8,1),
+            new THREE.Face3(10,3,0),
+            new THREE.Face3(10,0,7),
+            //first end the big one
+            new THREE.Face3(3,5,6),
+            new THREE.Face3(3,4,5),
+            new THREE.Face3(4,12,5),
+            new THREE.Face3(4,11,12),
+            new THREE.Face3(11,13,12),
+            new THREE.Face3(11,10,13),
+            new THREE.Face3(6,12,13),
+            new THREE.Face3(6,5,12),
+            new THREE.Face3(10,11,3),
+            new THREE.Face3(11,4,3)
+        );
+		
+		geometry2.vertices.push(
+            new THREE.Vector3(0,0,3),//0
+            new THREE.Vector3(0,0,6),//1
+            new THREE.Vector3(0,9,6),//2
+            new THREE.Vector3(0,9,3),//3
+            new THREE.Vector3(0,3,0),//4--
+            new THREE.Vector3(0,3,3),//5--
+            new THREE.Vector3(0,6,3),//6
+            new THREE.Vector3(0,6,0),//7
+            new THREE.Vector3(3,0,3),//8
+            new THREE.Vector3(3,0,6),//9
+            new THREE.Vector3(3,9,6),//10
+            new THREE.Vector3(3,9,3),//11
+            new THREE.Vector3(3,3,0),//12--
+            new THREE.Vector3(3,3,3),//13--
+			new THREE.Vector3(3,6,0),//14
+			new THREE.Vector3(3,6,3)//15
+        );
+
+        geometry2.faces.push( 
+            new THREE.Face3(0,1,2),
+            new THREE.Face3(0,2,3),
+			new THREE.Face3(1,10,2),
+			new THREE.Face3(1,9,10),
+			new THREE.Face3(9,11,10),
+			new THREE.Face3(9,8,11),
+			new THREE.Face3(3,15,6),
+			new THREE.Face3(3,11,15),
+			new THREE.Face3(5,13,8),
+			new THREE.Face3(5,8,0),
+			new THREE.Face3(8,9,0),//--
+			new THREE.Face3(9,1,0),//--
+			new THREE.Face3(3,10,11),
+			new THREE.Face3(3,2,10),
+            //first end the big one
+            new THREE.Face3(4,6,7),
+			new THREE.Face3(4,5,6),
+			new THREE.Face3(13,14,15),
+			new THREE.Face3(13,12,14),
+			new THREE.Face3(12,7,14),
+			new THREE.Face3(12,4,7),
+			new THREE.Face3(12,13,4),//--
+			new THREE.Face3(13,5,4),//--
+			new THREE.Face3(7,15,14),
+			new THREE.Face3(7,6,15)
+        );
+		
+		geometry3.vertices.push(
+            new THREE.Vector3(0,0,0),//0
+			new THREE.Vector3(0,0,3),//1
+			new THREE.Vector3(0,6,0),//2
+			new THREE.Vector3(0,6,3),//3
+			new THREE.Vector3(0,3,3),//4
+			new THREE.Vector3(0,3,6),//5
+			new THREE.Vector3(0,9,6),//6
+			new THREE.Vector3(0,9,3),//7
+			new THREE.Vector3(3,0,0),//8
+			new THREE.Vector3(3,0,3),//9
+			new THREE.Vector3(3,6,0),//10
+			new THREE.Vector3(3,6,3),//11
+			new THREE.Vector3(3,3,3),//12
+			new THREE.Vector3(3,3,6),//13
+			new THREE.Vector3(3,9,3),//14
+			new THREE.Vector3(3,9,6)//15
+		);
+		
+        geometry3.faces.push( 
+            new THREE.Face3(0,1,3),
+            new THREE.Face3(0,3,2),
+			new THREE.Face3(8,9,0),
+			new THREE.Face3(9,1,0),
+			new THREE.Face3(9,10,11),
+			new THREE.Face3(9,8,10),
+			new THREE.Face3(1,12,4),
+			new THREE.Face3(1,9,12),
+			new THREE.Face3(11,7,14),
+			new THREE.Face3(11,3,7),
+			new THREE.Face3(8,2,10),
+			new THREE.Face3(8,0,2),
+			new THREE.Face3(2,11,10),
+			new THREE.Face3(2,3,11),
+            //first end the big one
+			new THREE.Face3(4,6,7),
+			new THREE.Face3(4,5,6),
+			new THREE.Face3(5,15,6),
+			new THREE.Face3(5,13,15),
+			new THREE.Face3(13,14,15),
+			new THREE.Face3(13,12,14),
+			new THREE.Face3(7,15,14),
+			new THREE.Face3(7,6,15),
+			new THREE.Face3(12,5,4),
+			new THREE.Face3(12,13,5)
+            
+        );
+		
+        
+		geometry4.vertices.push(
+			new THREE.Vector3(0,0,0),//0
+			new THREE.Vector3(0,3,0),//1
+			new THREE.Vector3(0,3,3),//2
+			new THREE.Vector3(0,0,3),//3
+			new THREE.Vector3(0,0,6),//4
+			new THREE.Vector3(0,3,6),//5
+			new THREE.Vector3(3,3,0),//6
+			new THREE.Vector3(3,3,3),//7
+			new THREE.Vector3(3,0,0),//8
+			new THREE.Vector3(3,0,3),//9
+			new THREE.Vector3(3,3,6),//10
+			new THREE.Vector3(6,0,3),//11
+			new THREE.Vector3(6,0,6),//12
+			new THREE.Vector3(3,6,3),//13
+			new THREE.Vector3(3,6,6),//14
+			new THREE.Vector3(6,6,3),//15
+			new THREE.Vector3(6,6,6)//16
+        );
+
+        geometry4.faces.push( 
+			new THREE.Face3(0,2,1),
+			new THREE.Face3(0,3,2),
+			new THREE.Face3(8,1,6),
+			new THREE.Face3(8,0,1),
+			new THREE.Face3(9,6,7),
+			new THREE.Face3(9,8,6),
+			new THREE.Face3(1,7,6),
+			new THREE.Face3(1,2,7),
+			new THREE.Face3(8,3,0),
+			new THREE.Face3(8,9,3),
+			
+			new THREE.Face3(3,5,2),
+			new THREE.Face3(3,4,5),
+			new THREE.Face3(4,10,5),
+			new THREE.Face3(4,12,16),
+			new THREE.Face3(10,16,14),
+			new THREE.Face3(2,10,7),
+			new THREE.Face3(2,5,10),
+			new THREE.Face3(7,14,13),
+			new THREE.Face3(7,10,14),
+			new THREE.Face3(13,15,9),
+			new THREE.Face3(15,11,9),
+			new THREE.Face3(13,16,15),
+			new THREE.Face3(13,14,16),
+			new THREE.Face3(11,4,3),
+			new THREE.Face3(11,12,4),
+			new THREE.Face3(12,15,16),
+			new THREE.Face3(12,11,15)
+        );
+		}
+		
+		geometry5.vertices.push(
+			new THREE.Vector3(0,0,6),//0
+			new THREE.Vector3(0,3,6),//1
+			new THREE.Vector3(0,3,3),//2
+			new THREE.Vector3(0,0,3),//3
+			new THREE.Vector3(0,0,0),//4
+			new THREE.Vector3(0,3,0),//5--
+			new THREE.Vector3(3,3,6),//6--
+			new THREE.Vector3(3,3,3),//7
+			new THREE.Vector3(3,0,6),//8
+			new THREE.Vector3(3,0,3),//9
+			new THREE.Vector3(3,3,0),//10
+			new THREE.Vector3(6,0,3),//11
+			new THREE.Vector3(6,0,0),//12
+			new THREE.Vector3(3,6,3),//13
+			new THREE.Vector3(3,6,0),//14
+			new THREE.Vector3(6,6,3),//15
+			new THREE.Vector3(6,6,0)//16
+        );
+
+        geometry5.faces.push( 
+			new THREE.Face3(4,1,5),
+			new THREE.Face3(4,0,1),
+			new THREE.Face3(0,6,1),
+			new THREE.Face3(0,8,6),
+			new THREE.Face3(8,7,6),
+			new THREE.Face3(8,9,7),
+			new THREE.Face3(9,15,13),
+			new THREE.Face3(9,11,15),
+			new THREE.Face3(11,16,15),
+			new THREE.Face3(11,12,16),
+			new THREE.Face3(4,16,12),
+			new THREE.Face3(14,16,10),
+			new THREE.Face3(5,10,4),
+			new THREE.Face3(5,6,10),
+			new THREE.Face3(5,1,6),
+			new THREE.Face3(14,15,16),
+			new THREE.Face3(14,13,15),
+			new THREE.Face3(10,13,14),
+			new THREE.Face3(10,7,13),
+			new THREE.Face3(12,3,4),
+			new THREE.Face3(12,11,3),
+			new THREE.Face3(9,0,3),
+			new THREE.Face3(9,8,0)
+        );
+		
+		geometry6.vertices.push(
+			new THREE.Vector3(0,0,0),//0
+			new THREE.Vector3(0,3,0),//1
+			new THREE.Vector3(0,3,3),//2
+			new THREE.Vector3(0,0,3),//3
+			new THREE.Vector3(3,0,3),//4
+			new THREE.Vector3(3,0,6),//5--
+			new THREE.Vector3(3,3,3),//6--
+			new THREE.Vector3(3,3,6),//7
+			new THREE.Vector3(3,0,0),//8
+			new THREE.Vector3(3,3,0),//9
+			new THREE.Vector3(3,6,0),//10
+			new THREE.Vector3(3,6,3),//11
+			new THREE.Vector3(6,6,0),//12
+			new THREE.Vector3(6,6,3),//13
+			new THREE.Vector3(6,3,3),//14
+			new THREE.Vector3(6,3,6),//15
+			new THREE.Vector3(6,0,3),//16
+			new THREE.Vector3(6,0,6),//17
+			new THREE.Vector3(6,0,0)//18
+        );	
+		
+		
+        geometry6.faces.push( 
+			new THREE.Face3(0,2,1),
+			new THREE.Face3(0,3,2),
+			new THREE.Face3(3,6,2),
+			new THREE.Face3(3,4,6),
+			new THREE.Face3(4,7,6),
+			new THREE.Face3(4,5,7),
+			new THREE.Face3(5,15,7),
+			new THREE.Face3(5,17,15),
+			new THREE.Face3(17,14,15),
+			new THREE.Face3(17,16,14),
+			new THREE.Face3(16,12,13),
+			new THREE.Face3(16,18,12),
+			new THREE.Face3(18,10,12),
+			new THREE.Face3(18,8,10),
+			new THREE.Face3(8,1,9),
+			new THREE.Face3(8,0,1),
+			new THREE.Face3(9,11,10),
+			new THREE.Face3(9,6,11),
+			new THREE.Face3(6,13,11),
+			new THREE.Face3(6,14,13),
+			new THREE.Face3(6,15,14),
+			new THREE.Face3(6,7,15),
+			new THREE.Face3(1,6,9),
+			new THREE.Face3(1,2,6),
+			new THREE.Face3(10,13,12),
+			new THREE.Face3(10,11,13),
+			new THREE.Face3(18,3,0),
+			new THREE.Face3(18,16,3),
+			new THREE.Face3(16,5,4),
+			new THREE.Face3(16,17,5)
+        );
+		
+		geometry.computeFaceNormals();
+		geometry1.computeFaceNormals();
+		geometry2.computeFaceNormals();
+		geometry3.computeFaceNormals();
+		geometry4.computeFaceNormals();
+		geometry5.computeFaceNormals();
+		geometry6.computeFaceNormals();
+		
+		
+		
+		geometry.computeBoundingSphere();
+        geometry1.computeBoundingSphere();
+		geometry2.computeBoundingSphere();
+		geometry3.computeBoundingSphere();
+		geometry4.computeBoundingSphere();
+		geometry5.computeBoundingSphere();
+		geometry6.computeBoundingSphere();
+		
+        var materials = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0xFFFFFF, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials1 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0xB2B2B2, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials2 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0x0066FF, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials3 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0xFF0066, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials4 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0x4C4C4C, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials5 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0x009933, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+		var materials6 = [
+                     new THREE.MeshLambertMaterial( { opacity:1, color: 0xFFFF00, transparent:true } ),
+                     new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } )
+        ];
+
+		var mesh = THREE.SceneUtils.createMultiMaterialObject( geometry, materials );
+        var mesh1 = THREE.SceneUtils.createMultiMaterialObject( geometry1, materials1 );
+		var mesh2 = THREE.SceneUtils.createMultiMaterialObject( geometry2, materials2 );
+		var mesh3 = THREE.SceneUtils.createMultiMaterialObject( geometry3, materials3 );
+		var mesh4 = THREE.SceneUtils.createMultiMaterialObject( geometry4, materials4 );
+		var mesh5 = THREE.SceneUtils.createMultiMaterialObject( geometry5, materials5 );
+		var mesh6 = THREE.SceneUtils.createMultiMaterialObject( geometry6, materials6 );
+        scene.add( mesh );
+        scene.add( mesh1 );
+		scene.add( mesh2 );
+		scene.add( mesh3 );
+		scene.add( mesh4 );
+		scene.add( mesh5 );
+		scene.add( mesh6 );
+       
+
+        // call the render function
+        var step=0;
+		
+		/*mesh2.rotation.x = Math.PI/2;
+			mesh2.position.y = 7*3;
+			mesh2.position.x = 3*3;
+
+			mesh3.position.y = 2*3;
+			mesh3.position.x = 4*3;
+			mesh3.position.z = 3*3;
+			mesh3.rotation.y =Math.PI;
+
+			mesh6.position.x = 2*3;
+			mesh6.position.y = 2*3;
+			
+			mesh.rotation.z = Math.PI/2;
+			mesh.position.x = 4*3;
+			mesh.position.y = 3;
+			
+			mesh1.rotation.z = Math.PI/2*3
+			mesh1.position.x = 3;
+			mesh1.position.y = 3;
+			mesh1.position.z = 3*3;
+			mesh1.rotation.x = Math.PI;
+			
+			mesh4.position.x = 3;
+			mesh4.position.y = 3*2;
+			mesh4.position.z = 3*3;
+			mesh4.rotation.y = Math.PI/2;
+			
+			mesh5.position.x = 3;
+			mesh5.position.y = 3*3;
+			mesh5.rotation.z = Math.PI/-2;*/
+var t = 0
+        render();
+		
+
+        function render() {
+			/*k = 0;			
+			
+			
+			
+			
+			if(k == 0){
+				if(mesh1.position.z != 20){
+					mesh1.position.x += 0.09;
+					mesh1.position.y -= 0.03;
+					mesh1.position.z += 0.125;
+					mesh1.rotation.z -= 0.018;
+				}
+				else k++;
+			}
+			if (k == 1){
+				if(mesh.position.z != -15){
+					t += 0.0135
+					mesh.position.z -= 0.125;
+					mesh.rotation.z = Math.cos(t);
+					mesh.position.y -= 0.0250
+				}
+				else 
+				k++
+			}
+			if(k == 2){
+				if(mesh6.position.y != 0){
+				mesh6.translateY ( -0.125);
+				mesh6.translateX ( 0.4);
+				mesh6.translateZ (-0.38);
+				}
+				else k++
+			}
+			if(k == 3){
+				if(mesh4.position.y != 0){
+				mesh4.position.y -= 0.125;
+				mesh4.position.z += 0.2;
+				mesh4.position.x -= 0.125;
+				}
+				else k++
+			}
+			if(k == 4){
+				if(mesh3.position.y != 0){
+				mesh3.position.y -= 0.125;
+				mesh3.position.z += 0.15;
+				mesh3.position.x += 0.2;
+				mesh3.rotation.y += 0.03;
+				}
+				else k++
+			}
+			if (k == 5){
+				if (mesh2.position.y != 6){
+					mesh2.position.x -= 0.03;
+					mesh2.position.y -= 0.125;
+					mesh2.position.z -= 0.15;		
+					}
+				else{
+					k++;
+				}
+			}
+			if(k == 6){
+				if(mesh5.position.z != -15){
+					mesh5.translateZ( -0.125 );
+					mesh5.rotation.z += 0.0125;
+					mesh5.translateY( -0.1 );
+				}//else{ 
+					
+					//k++;
+				//}
+				
+			}*/
+			
+            stats.update();
+            requestAnimationFrame(render);
+            renderer.render(scene, camera);
+        }
+		
+
+        function initStats() {
+
+            var stats = new Stats();
+
+            stats.setMode(0); // 0: fps, 1: ms
+
+            // Align top-left
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+
+            $("#Stats-output").append( stats.domElement );
+
+            return stats;
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+//Studentas Jonas Kristupas Rudzianskas, informatikos: kompiuteriu mokslo studiju programa, 4 kursas, 2 grupe
+//1 testas. Uzmirstama saka.
+//1) Taisykles:
+Z C D // R1: C, D -> Z
+C T   // R2: T -> C
+Z T   // R3: T -> Z
+
+//2) Faktai:
+T
+
+//3) Tikslas:
+Z

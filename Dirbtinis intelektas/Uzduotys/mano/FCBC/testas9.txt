@@ -1,0 +1,10 @@
+//Studentas Laimonas Beniušis, informatikos: kompiuterių mokslo studijų programa, 4 kursas, 1 grupė
+//9 testas. Tikslas tarp faktų
+//1) Taisyklės:
+Z A // R1: A -> Z
+
+//2) Faktai:
+A Z
+
+//3) Tikslas:
+Z

@@ -1,0 +1,323 @@
+Parameters [String] labyrinth file, [Boolean] use wave method, [String] file output
+Default: lab.txt,false,null
+Data:
+  Y
+  ^
+8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+7 |  1,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1
+6 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+5 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1
+4 |  1,  1,  0,  1,  1,  1,  1,  1,  0,  1,  1,  0,  0,  0,  0,  0,  0,  0,  1,  1
+3 |  1,  1,  0,  0,  1,  1,  1,  1,  0,  1,  1,  0,  0,  1,  1,  0,  1,  0,  1,  1
+2 |  1,  1,  0,  0,  0,  0,  2,  0,  0,  1,  1,  0,  0,  1,  1,  0,  0,  0,  1,  1
+1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  0,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+     1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+Wave: 1
+	 Close [7 2]
+		R1[6 2] EMPTY OPEN [6 2]
+		R2[7 3] WALL
+		R3[8 2] EMPTY OPEN [8 2]
+		R4[7 1] WALL
+Wave: 2
+	 Close [6 2]
+		R1[5 2] EMPTY OPEN [5 2]
+		R2[6 3] WALL
+		R3[7 2] VISITED
+		R4[6 1] WALL
+	 Close [8 2]
+		R1[7 2] VISITED
+		R2[8 3] WALL
+		R3[9 2] EMPTY OPEN [9 2]
+		R4[8 1] WALL
+Wave: 3
+	 Close [5 2]
+		R1[4 2] EMPTY OPEN [4 2]
+		R2[5 3] WALL
+		R3[6 2] VISITED
+		R4[5 1] WALL
+	 Close [9 2]
+		R1[8 2] VISITED
+		R2[9 3] EMPTY OPEN [9 3]
+		R3[10 2] WALL
+		R4[9 1] WALL
+Wave: 4
+	 Close [4 2]
+		R1[3 2] EMPTY OPEN [3 2]
+		R2[4 3] EMPTY OPEN [4 3]
+		R3[5 2] VISITED
+		R4[4 1] WALL
+	 Close [9 3]
+		R1[8 3] WALL
+		R2[9 4] EMPTY OPEN [9 4]
+		R3[10 3] WALL
+		R4[9 2] VISITED
+Wave: 5
+	 Close [3 2]
+		R1[2 2] WALL
+		R2[3 3] EMPTY OPEN [3 3]
+		R3[4 2] VISITED
+		R4[3 1] WALL
+	 Close [4 3]
+		R1[3 3] VISITED
+		R2[4 4] WALL
+		R3[5 3] WALL
+		R4[4 2] VISITED
+	 Close [9 4]
+		R1[8 4] WALL
+		R2[9 5] EMPTY OPEN [9 5]
+		R3[10 4] WALL
+		R4[9 3] VISITED
+Wave: 6
+	 Close [3 3]
+		R1[2 3] WALL
+		R2[3 4] EMPTY OPEN [3 4]
+		R3[4 3] VISITED
+		R4[3 2] VISITED
+	 Close [9 5]
+		R1[8 5] WALL
+		R2[9 6] EMPTY OPEN [9 6]
+		R3[10 5] WALL
+		R4[9 4] VISITED
+Wave: 7
+	 Close [3 4]
+		R1[2 4] WALL
+		R2[3 5] EMPTY OPEN [3 5]
+		R3[4 4] WALL
+		R4[3 3] VISITED
+	 Close [9 6]
+		R1[8 6] WALL
+		R2[9 7] EMPTY OPEN [9 7]
+		R3[10 6] WALL
+		R4[9 5] VISITED
+Wave: 8
+	 Close [3 5]
+		R1[2 5] WALL
+		R2[3 6] EMPTY OPEN [3 6]
+		R3[4 5] WALL
+		R4[3 4] VISITED
+	 Close [9 7]
+		R1[8 7] EMPTY OPEN [8 7]
+		R2[9 8] WALL
+		R3[10 7] EMPTY OPEN [10 7]
+		R4[9 6] VISITED
+Wave: 9
+	 Close [3 6]
+		R1[2 6] WALL
+		R2[3 7] EMPTY OPEN [3 7]
+		R3[4 6] WALL
+		R4[3 5] VISITED
+	 Close [8 7]
+		R1[7 7] EMPTY OPEN [7 7]
+		R2[8 8] WALL
+		R3[9 7] VISITED
+		R4[8 6] WALL
+	 Close [10 7]
+		R1[9 7] VISITED
+		R2[10 8] WALL
+		R3[11 7] EMPTY OPEN [11 7]
+		R4[10 6] WALL
+Wave: 10
+	 Close [3 7]
+		R1[2 7] WALL
+		R2[3 8] WALL
+		R3[4 7] EMPTY OPEN [4 7]
+		R4[3 6] VISITED
+	 Close [7 7]
+		R1[6 7] EMPTY OPEN [6 7]
+		R2[7 8] WALL
+		R3[8 7] VISITED
+		R4[7 6] WALL
+	 Close [11 7]
+		R1[10 7] VISITED
+		R2[11 8] WALL
+		R3[12 7] EMPTY OPEN [12 7]
+		R4[11 6] WALL
+Wave: 11
+	 Close [4 7]
+		R1[3 7] VISITED
+		R2[4 8] WALL
+		R3[5 7] EMPTY OPEN [5 7]
+		R4[4 6] WALL
+	 Close [6 7]
+		R1[5 7] VISITED
+		R2[6 8] WALL
+		R3[7 7] VISITED
+		R4[6 6] WALL
+	 Close [12 7]
+		R1[11 7] VISITED
+		R2[12 8] WALL
+		R3[13 7] EMPTY OPEN [13 7]
+		R4[12 6] WALL
+Wave: 12
+	 Close [5 7]
+		R1[4 7] VISITED
+		R2[5 8] WALL
+		R3[6 7] VISITED
+		R4[5 6] WALL
+	 Close [13 7]
+		R1[12 7] VISITED
+		R2[13 8] WALL
+		R3[14 7] EMPTY OPEN [14 7]
+		R4[13 6] WALL
+Wave: 13
+	 Close [14 7]
+		R1[13 7] VISITED
+		R2[14 8] WALL
+		R3[15 7] EMPTY OPEN [15 7]
+		R4[14 6] WALL
+Wave: 14
+	 Close [15 7]
+		R1[14 7] VISITED
+		R2[15 8] WALL
+		R3[16 7] EMPTY OPEN [16 7]
+		R4[15 6] WALL
+Wave: 15
+	 Close [16 7]
+		R1[15 7] VISITED
+		R2[16 8] WALL
+		R3[17 7] EMPTY OPEN [17 7]
+		R4[16 6] WALL
+Wave: 16
+	 Close [17 7]
+		R1[16 7] VISITED
+		R2[17 8] WALL
+		R3[18 7] EMPTY OPEN [18 7]
+		R4[17 6] WALL
+Wave: 17
+	 Close [18 7]
+		R1[17 7] VISITED
+		R2[18 8] WALL
+		R3[19 7] WALL
+		R4[18 6] EMPTY OPEN [18 6]
+Wave: 18
+	 Close [18 6]
+		R1[17 6] WALL
+		R2[18 7] VISITED
+		R3[19 6] WALL
+		R4[18 5] EMPTY OPEN [18 5]
+Wave: 19
+	 Close [18 5]
+		R1[17 5] WALL
+		R2[18 6] VISITED
+		R3[19 5] WALL
+		R4[18 4] EMPTY OPEN [18 4]
+Wave: 20
+	 Close [18 4]
+		R1[17 4] EMPTY OPEN [17 4]
+		R2[18 5] VISITED
+		R3[19 4] WALL
+		R4[18 3] EMPTY OPEN [18 3]
+Wave: 21
+	 Close [17 4]
+		R1[16 4] EMPTY OPEN [16 4]
+		R2[17 5] WALL
+		R3[18 4] VISITED
+		R4[17 3] WALL
+	 Close [18 3]
+		R1[17 3] WALL
+		R2[18 4] VISITED
+		R3[19 3] WALL
+		R4[18 2] EMPTY OPEN [18 2]
+Wave: 22
+	 Close [16 4]
+		R1[15 4] EMPTY OPEN [15 4]
+		R2[16 5] WALL
+		R3[17 4] VISITED
+		R4[16 3] EMPTY OPEN [16 3]
+	 Close [18 2]
+		R1[17 2] EMPTY OPEN [17 2]
+		R2[18 3] VISITED
+		R3[19 2] WALL
+		R4[18 1] WALL
+Wave: 23
+	 Close [15 4]
+		R1[14 4] EMPTY OPEN [14 4]
+		R2[15 5] WALL
+		R3[16 4] VISITED
+		R4[15 3] WALL
+	 Close [16 3]
+		R1[15 3] WALL
+		R2[16 4] VISITED
+		R3[17 3] WALL
+		R4[16 2] EMPTY OPEN [16 2]
+	 Close [17 2]
+		R1[16 2] VISITED
+		R2[17 3] WALL
+		R3[18 2] VISITED
+		R4[17 1] WALL
+Wave: 24
+	 Close [14 4]
+		R1[13 4] EMPTY OPEN [13 4]
+		R2[14 5] WALL
+		R3[15 4] VISITED
+		R4[14 3] WALL
+	 Close [16 2]
+		R1[15 2] WALL
+		R2[16 3] VISITED
+		R3[17 2] VISITED
+		R4[16 1] WALL
+Wave: 25
+	 Close [13 4]
+		R1[12 4] EMPTY OPEN [12 4]
+		R2[13 5] WALL
+		R3[14 4] VISITED
+		R4[13 3] EMPTY OPEN [13 3]
+Wave: 26
+	 Close [12 4]
+		R1[11 4] WALL
+		R2[12 5] WALL
+		R3[13 4] VISITED
+		R4[12 3] EMPTY OPEN [12 3]
+	 Close [13 3]
+		R1[12 3] VISITED
+		R2[13 4] VISITED
+		R3[14 3] WALL
+		R4[13 2] EMPTY OPEN [13 2]
+Wave: 27
+	 Close [12 3]
+		R1[11 3] WALL
+		R2[12 4] VISITED
+		R3[13 3] VISITED
+		R4[12 2] EMPTY OPEN [12 2]
+	 Close [13 2]
+		R1[12 2] VISITED
+		R2[13 3] VISITED
+		R3[14 2] WALL
+		R4[13 1] WALL
+Wave: 28
+	 Close [12 2]
+		R1[11 2] WALL
+		R2[12 3] VISITED
+		R3[13 2] VISITED
+Wave trace
+  Y
+  ^
+8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+7 |  1,  1, 11, 12, 13, 12, 11, 10,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,  1,  1
+6 |  1,  1, 10,  1,  1,  1,  1,  1,  8,  1,  1,  1,  1,  1,  1,  1,  1, 19,  1,  1
+5 |  1,  1,  9,  1,  1,  1,  1,  1,  7,  1,  1,  1,  1,  1,  1,  1,  1, 20,  1,  1
+4 |  1,  1,  8,  1,  1,  1,  1,  1,  6,  1,  1, 27, 26, 25, 24, 23, 22, 21,  1,  1
+3 |  1,  1,  7,  6,  1,  1,  1,  1,  5,  1,  1, 28, 27,  1,  1, 24,  1, 22,  1,  1
+2 |  1,  1,  6,  5,  4,  3,  2,  3,  4,  1,  1, 29, 28,  1,  1, 25, 24, 23,  1,  1
+1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 30,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+     1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+
+Trace path
+
+  Y
+  ^
+8 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1
+7 |  1,  1,  0,  0,  0,  0,  0,  0,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,  1,  1
+6 |  1,  1,  0,  1,  1,  1,  1,  1,  8,  1,  1,  1,  1,  1,  1,  1,  1, 19,  1,  1
+5 |  1,  1,  0,  1,  1,  1,  1,  1,  7,  1,  1,  1,  1,  1,  1,  1,  1, 20,  1,  1
+4 |  1,  1,  0,  1,  1,  1,  1,  1,  6,  1,  1, 27, 26, 25, 24, 23, 22, 21,  1,  1
+3 |  1,  1,  0,  0,  1,  1,  1,  1,  5,  1,  1, 28,  0,  1,  1,  0,  1,  0,  1,  1
+2 |  1,  1,  0,  0,  0,  0,  2,  3,  4,  1,  1, 29,  0,  1,  1,  0,  0,  0,  1,  1
+1 |  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 30,  1,  1,  1,  1,  1,  1,  1,  1
+  ----------------------------------------------------------------------------------> X
+     1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+
+Rules:[R1, R1, R4, R4, R4, R4, R4, R1, R1, R1, R1, R1, R1, R1, R1, R1, R2, R2, R2, R3, R3, R3, R3, R3, R3, R2, R2, R2]
+Positions: [[12 1], [12 2], [12 3], [12 4], [13 4], [14 4], [15 4], [16 4], [17 4], [18 4], [18 5], [18 6], [18 7], [17 7], [16 7], [15 7], [14 7], [13 7], [12 7], [11 7], [10 7], [9 7], [9 6], [9 5], [9 4], [9 3], [9 2], [8 2]]

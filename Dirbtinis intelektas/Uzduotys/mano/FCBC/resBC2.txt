@@ -1,0 +1,50 @@
+PART 1. Data
+	1) Rules:
+		R1: [D, C] -> Z
+		R2: [C] -> D
+		R3: [B] -> C
+		R4: [A] -> B
+		R5: [D] -> A
+		R6: [T] -> D
+		R7: [G] -> A
+		R8: [H] -> B
+		R9: [J] -> C
+
+	2) Given facts:
+		T
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+    1) .. Goal Z. Find R1: [D, C] -> Z. New goals:[D, C]
+    2) .... Goal D. Find R2: [C] -> D. New goals:[C]
+    3) ...... Goal C. Find R3: [B] -> C. New goals:[B]
+    4) ........ Goal B. Find R4: [A] -> B. New goals:[A]
+    5) .......... Goal A. Find R5: [D] -> A. New goals:[D]
+    6) .......... Goal D. Cycle detected, Backtracking. FAIL.
+    7) .......... Goal A. Find R7: [G] -> A. New goals:[G]
+    8) ............ Goal G. No rules to deduce it. Backtracking. FAIL
+    9) .......... Goal A. No more rules to deduce it. Backtracking. FAIL
+   10) ........ Goal B. Find R8: [H] -> B. New goals:[H]
+   11) .......... Goal H. No rules to deduce it. Backtracking. FAIL
+   12) ........ Goal B. No more rules to deduce it. Backtracking. FAIL
+   13) ...... Goal C. Find R9: [J] -> C. New goals:[J]
+   14) ........ Goal J. No rules to deduce it. Backtracking. FAIL
+   15) ...... Goal C. No more rules to deduce it. Backtracking. FAIL
+   16) .... Goal D. Find R6: [T] -> D. New goals:[T]
+   17) .... Goal T. Fact was given, DB:[T]
+   18) .... Goal D. New Fact added, DB:[T, D], Backtracking. OK
+   19) .... Goal C. Find R3: [B] -> C. New goals:[B]
+   20) ...... Goal B. Find R4: [A] -> B. New goals:[A]
+   21) ........ Goal A. Find R5: [D] -> A. New goals:[D]
+   22) ........ Goal D. Fact was deduced, DB:[T, D]
+   23) ........ Goal A. New Fact added, DB:[A, T, D], Backtracking. OK
+   24) ...... Goal B. New Fact added, DB:[A, B, T, D], Backtracking. OK
+   25) .... Goal C. New Fact added, DB:[A, B, C, T, D], Backtracking. OK
+   26) .. Goal Z. New Fact added, DB:[A, B, C, T, D, Z], Backtracking. OK
+
+PART 3. Results
+	1) Z was deduced
+	2) Path: [R6, R5, R4, R3, R1]

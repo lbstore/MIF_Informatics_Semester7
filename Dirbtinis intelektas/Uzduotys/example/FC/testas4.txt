@@ -1,0 +1,10 @@
+//Studentas Jonas Kristupas Rudzianskas, informatikos: kompiuteriu mokslo studiju programa, 4 kursas, 2 grupe
+//4 testas. Tikslas tarp faktu
+//1) Taisykles:
+Z A // R1: A -> Z
+
+//2) Faktai:
+A Z
+
+//3) Tikslas:
+Z

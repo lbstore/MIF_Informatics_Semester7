@@ -1,0 +1,16 @@
+PART 1. Data
+	1) Rules:
+		R1: [A] -> Z
+
+	2) Given facts:
+		A
+		Z
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+
+PART 3. Results
+	1) Z was given

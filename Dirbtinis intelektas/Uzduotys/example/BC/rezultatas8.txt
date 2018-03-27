@@ -1,0 +1,24 @@
+1 DALIS. Duomenys
+
+  1) Taisykles:
+     R1: A, D -> Z
+     R2: B, D -> Z
+     R3: C, D -> Z
+     R4: C, E -> Y
+
+  2) Faktai:
+     C, D
+
+  3) Tikslas:
+     Y
+
+2 DALIS. Vykdymas
+
+ 1).Tikslas Y. Randame R4:C,E->Y. Nauji tikslai C, E.
+ 2)..Tikslas C. Faktas (duotas), nes faktai C, D. Griztame, sekme.
+ 3)..Tikslas E. Nera taisykliu jo isvedimui. Griztame, FAIL.
+ 4).Tikslas Y. Nera daugiau taisykliu jo isvedimui. Griztame, FAIL.
+
+3 DALIS. Rezultatai
+  1) Tikslas Y neisvestas.
+

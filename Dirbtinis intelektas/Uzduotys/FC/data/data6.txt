@@ -1,0 +1,12 @@
+Studentë Samanta Aèaitë bioinformatika 4 kursas.
+6 testas. Kelias neegzistuoja
+ 
+1) Taisykles
+B A  //R1 : A -> B
+C Z  //R2 : Z -> C
+ 
+2) Faktai
+A
+ 
+3) Tikslas
+Z

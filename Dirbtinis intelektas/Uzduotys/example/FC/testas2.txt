@@ -1,0 +1,15 @@
+//Studentas Jonas Kristupas Rudzianskas, informatikos: kompiuteriu mokslo studiju programa, 4 kursas, 2 grupe
+//2 testas. Cyras vs Negnevitsky; Cyras laimi
+//1) Taisykles:
+Z G // R1: G -> Z
+G A // R2: A -> G
+B A // R3: A -> B
+C B // R4: B -> C
+D C // R5: C -> D
+Z D // R6: D -> Z
+
+//2) Faktai:
+A
+
+//3) Tikslas:
+Z

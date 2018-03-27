@@ -1,0 +1,25 @@
+PART 1. Data
+	1) Rules:
+		R1: [A] -> Z
+		R2: [B] -> Z
+		R3: [C] -> Z
+
+	2) Given facts:
+		C
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+    1) .. Goal Z. Find R1: [A] -> Z. New goals:[A]
+    2) .... Goal A. No rules to deduce it. Backtracking. FAIL
+    3) .. Goal Z. Find R2: [B] -> Z. New goals:[B]
+    4) .... Goal B. No rules to deduce it. Backtracking. FAIL
+    5) .. Goal Z. Find R3: [C] -> Z. New goals:[C]
+    6) .. Goal C. Fact was given, DB:[C]
+    7) .. Goal Z. New Fact added, DB:[C, Z], Backtracking. OK
+
+PART 3. Results
+	1) Z was deduced
+	2) Path: [R3]

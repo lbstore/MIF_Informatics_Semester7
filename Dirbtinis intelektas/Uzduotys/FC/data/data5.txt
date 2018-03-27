@@ -1,0 +1,13 @@
+Studentë Samanta Aèaitë bioinformatika 4 kursas.
+5 testas. Tikslas tarp faktø
+ 
+1) Taisyklës
+Z B F  //R1 : F, B -> Z
+F D C  //R2 : C, D -> F
+D A    //R3 : A -> D
+ 
+2) Faktai
+A B C
+ 
+3) Tikslas
+A

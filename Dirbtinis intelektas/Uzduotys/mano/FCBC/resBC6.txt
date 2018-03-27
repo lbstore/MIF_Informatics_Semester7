@@ -1,0 +1,34 @@
+PART 1. Data
+	1) Rules:
+		R1: [F] -> B
+		R2: [E] -> G
+		R3: [D] -> Z
+		R4: [C] -> D
+		R5: [B] -> C
+		R6: [A] -> B
+		R7: [A] -> G
+		R8: [G] -> Z
+
+	2) Given facts:
+		A
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+    1) .. Goal Z. Find R3: [D] -> Z. New goals:[D]
+    2) .... Goal D. Find R4: [C] -> D. New goals:[C]
+    3) ...... Goal C. Find R5: [B] -> C. New goals:[B]
+    4) ........ Goal B. Find R1: [F] -> B. New goals:[F]
+    5) .......... Goal F. No rules to deduce it. Backtracking. FAIL
+    6) ........ Goal B. Find R6: [A] -> B. New goals:[A]
+    7) ........ Goal A. Fact was given, DB:[A]
+    8) ........ Goal B. New Fact added, DB:[A, B], Backtracking. OK
+    9) ...... Goal C. New Fact added, DB:[A, B, C], Backtracking. OK
+   10) .... Goal D. New Fact added, DB:[A, B, C, D], Backtracking. OK
+   11) .. Goal Z. New Fact added, DB:[A, B, C, D, Z], Backtracking. OK
+
+PART 3. Results
+	1) Z was deduced
+	2) Path: [R6, R5, R4, R3]

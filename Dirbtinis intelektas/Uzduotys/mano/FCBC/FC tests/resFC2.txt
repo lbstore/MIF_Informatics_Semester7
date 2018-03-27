@@ -1,0 +1,26 @@
+PART 1. Data
+	1) Rules:
+		R1: [G] -> Z
+		R2: [A] -> G
+		R3: [A] -> B
+		R4: [B] -> C
+		R5: [C] -> D
+		R6: [D] -> Z
+
+	2) Given facts:
+		A
+
+	3) Goal:
+		Z
+
+PART 2. Execution
+
+    1) .. Goal Z. Find R1: [G] -> Z. New goals:[G]
+    2) .... Goal G. Find R2: [A] -> G. New goals:[A]
+    3) .... Goal A. Fact was given, current DB:[A]
+    4) .... Goal G. New Fact recieved, current DB:[A, G], Backtracking. OK
+    5) .. Goal Z. New Fact recieved, current DB:[A, G, Z], Backtracking. OK
+
+PART 3. Results
+	1) Z was deduced
+	2) Path: [R2, R1]
