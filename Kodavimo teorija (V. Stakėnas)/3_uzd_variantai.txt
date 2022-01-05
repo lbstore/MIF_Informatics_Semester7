@@ -1,0 +1,133 @@
+3#
+<pre>
+Įvertinkite dydį A_2(8,3) iš viršaus ir apačios.
+Iš abėcėlės A_2={0,1} n=8 ilgio žodžių sudarykite 
+kuo didesnį kodą C su minimaliu atstumu d=3.
+Kodui sudarykite lentelę:
+kodo žodis c | atstumas iki  kito artimiausio kodo žodžio.
+Apskaičiuokite ,,apgavystės`` tikimybę naudojantis šiuo kodu,
+jei kanalas iškreipia simbolį į kitą su tikimybe p=0,05.
+
+Pagalbiniai skriptai:
+
+ Visų k ilgio žodžių iš F_p sudarymas 
+
+def code(p,k):
+    C=[]
+    N=p^k
+    for n in range(0,N):
+        c=[]
+        for i in range(0,k):
+            n0=n%p
+            c.append(n0)
+            n=(n-n0)//p
+        C.append(c)
+    return C
+
+ Hammingo atstumo skaičiavimas
+def hmng(u,v):
+    d=0
+    k=min(len(u),len(v))
+    for i in range(0,k):
+        if u[i]!=v[i]:
+            d+=1
+    return d
+
+ Rutulio be centro šalinimas iš kodo
+
+def remove(C,c,r):
+    C_naujas=C[:]
+    for v in C:
+        if (hmng(v,c)<=r):
+            C_naujas.remove(v)
+    C_naujas.append(c)
+    return C_naujas
+</pre>#
+<pre>
+Įvertinkite dydį A_3(6,3) iš viršaus ir apačios.
+Iš abėcėlės A_3={0,1,2} n=6 ilgio žodžių sudarykite 
+kuo didesnį kodą C su minimaliu atstumu d=3.
+Kodui sudarykite lentelę:
+kodo žodis c | atstumas iki  kito artimiausio kodo žodžio.
+Apskaičiuokite ,,apgavystės`` tikimybę naudojantis šiuo kodu,
+jei kanalas iškreipia simbolį į kitą su tikimybe p=0,05.
+
+Pagalbiniai skriptai:
+
+ Visų k ilgio žodžių iš F_p sudarymas 
+
+def code(p,k):
+    C=[]
+    N=p^k
+    for n in range(0,N):
+        c=[]
+        for i in range(0,k):
+            n0=n%p
+            c.append(n0)
+            n=(n-n0)//p
+        C.append(c)
+    return C
+
+ Hammingo atstumo skaičiavimas
+def hmng(u,v):
+    d=0
+    k=min(len(u),len(v))
+    for i in range(0,k):
+        if u[i]!=v[i]:
+            d+=1
+    return d
+
+ Rutulio be centro šalinimas iš kodo
+
+def remove(C,c,r):
+    C_naujas=C[:]
+    for v in C:
+        if (hmng(v,c)<=r):
+            C_naujas.remove(v)
+    C_naujas.append(c)
+    return C_naujas
+</pre>#
+<pre>
+Įvertinkite dydį A_2(8,3) iš viršaus ir apačios.
+Iš abėcėlės A_2={0,1} n=8 ilgio žodžių sudarykite 
+kuo didesnį kodą C su minimaliu atstumu d=3.
+Kodui sudarykite lentelę:
+kodo žodis c | atstumas iki  kito artimiausio kodo žodžio.
+Apskaičiuokite ,,apgavystės`` tikimybę naudojantis šiuo kodu,
+jei kanalas iškreipia simbolį į kitą su tikimybe p=0,05.
+
+Pagalbiniai skriptai:
+
+ Visų k ilgio žodžių iš F_p sudarymas 
+
+def code(p,k):
+    C=[]
+    N=p^k
+    for n in range(0,N):
+        c=[]
+        for i in range(0,k):
+            n0=n%p
+            c.append(n0)
+            n=(n-n0)//p
+        C.append(c)
+    return C
+
+ Hammingo atstumo skaičiavimas
+def hmng(u,v):
+    d=0
+    k=min(len(u),len(v))
+    for i in range(0,k):
+        if u[i]!=v[i]:
+            d+=1
+    return d
+
+ Rutulio be centro šalinimas iš kodo
+
+def remove(C,c,r):
+    C_naujas=C[:]
+    for v in C:
+        if (hmng(v,c)<=r):
+            C_naujas.remove(v)
+    C_naujas.append(c)
+    return C_naujas
+</pre>#	

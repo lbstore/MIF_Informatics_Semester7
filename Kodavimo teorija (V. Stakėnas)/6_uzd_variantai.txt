@@ -1,0 +1,115 @@
+10#
+<pre> 1 užduotis
+
+Abėcėlės dydis q=2
+Kontrolinės kodo matricos eilutės:
+1101110001, 0111100010, 1100110111, 1001111001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+</pre>#
+<pre> 2 užduotis
+
+Abėcėlės dydis q=3
+Kontrolinės kodo matricos eilutės:
+10210211, 21001002, 10021001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+</pre>#
+<pre> 3 užduotis
+
+Abėcėlės dydis q=3
+Kontrolinės kodo matricos eilutės:
+10110211, 21001002, 00021001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+</pre>#
+<pre> 4 užduotis
+
+Abėcėlės dydis q=3
+Kontrolinės kodo matricos eilutės:
+10210211, 21001002, 10021001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+</pre>#
+<pre> 5 užduotis
+
+Abėcėlės dydis q=3
+Kontrolinės kodo matricos eilutės:
+10210211, 21001002, 10021001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#
+
+<pre> 6 užduotis
+Abėcėlės dydis q=5
+Kontrolinės kodo matricos eilutės:
+231001, 104211.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#
+
+<pre> 7 užduotis
+
+Abėcėlės dydis q=2
+Kontrolinės kodo matricos eilutės:
+1001110001, 0101100011, 1100110111, 0001111001.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#
+
+<pre> 8 užduotis
+
+Abėcėlės dydis q=5
+Kontrolinės kodo matricos eilutės:
+131001, 104210.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#
+
+<pre> 9 užduotis
+
+Abėcėlės dydis q=7
+Kontrolinės kodo matricos eilutės:
+231001, 104211.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#
+
+<pre> 10 užduotis
+
+Abėcėlės dydis q=7
+Kontrolinės kodo matricos eilutės:
+431001, 104213.
+Raskite kodo svorius ir ,,apgavystės tikimybę``, kai p=0,1 ir p=0,05.
+
+Savidualaus kodo L generuojančios matricos eilutės:
+111110, 123400, 144101 
+Raskite L svorių skirstinį.
+#

@@ -1,0 +1,1292 @@
+User,Numbers,Message,Task,Variant
+0,5&11,"GERINORAIA
+SAUGUSGREITISA   ",5,11
+0,1&5,"4. ST(3,4) - 0.014
+ ",1,5
+0,6&4,"Kodo svoris | kodo svoriu kiekis
+0               1
+1               0
+2               8
+3               6
+4               44
+5               70
+6               74
+7               28
+8               12",6,4
+0,6&4,"Apgavystes tikimybe, kai
+p(0.1) = 0.1129201200000001
+p(0.05) = 0.04417362285937501",6,4
+0,6&4,"Savidualaus kodo svoriu skirstinys
+[0,1]
+[1,0]
+[2,0]
+[3,0]
+[4,60]
+[5,24]
+[6,40]",6,4
+0,7&4,STIPRYBĖĖ,7,4
+0,15&11,"[1, 0, 0, 0, 0] a
+[0, 1, 1, 1, 0] n
+[1, 1, 0, 1, 0] k
+[1, 1, 0, 0, 1] s
+[0, 0, 1, 0, 1] t
+[1, 0, 0, 1, 1] y
+[0, 1, 1, 0, 1] v
+[1, 0, 0, 0, 0] a
+[1, 1, 0, 0, 1] s
+[0, 1, 0, 0, 1] r
+[1, 0, 1, 0, 1] u
+[0, 0, 1, 0, 0] d
+ankstyvasrud",15,11
+0,8&10,"1. Vasarotojai
+2. Vasarotoja  ",8,10
+0,2&5,1. 0.4945198,2,5
+0,2&5,"2.DTT - Teisingas c1 zodzio atkurimas:
+c1 -  d1 arba c1- d3, c2 atkurimas, tai c2- d5 arba c2- d6 arba c2- d7
+c3 atkurimas, tai c3- d2 arba c3- d4
+IST - Jeigu buvo pasiustas zodis c1 tai gavejas ji atkurs tesingai tikrinant jo
+didziausia tikimybe is pasiustu gautu zodziu d1..d8, t.y p(c1|d1),p(c2|d1),p(c3|d1) ir t.t su visais dn. ",2,5
+0,2&5,"3.DTT - 0.65527, IST - 0.8653",2,5
+0,4&14,V A S A R O S P A B A I G A    ,4,14
+0,3&,"PAPILDYMAS:
+IS VIRSAUS IR APACIOS:
+12  = A_3  = 56",3,
+0,3&,"PAPILDYMAS:
+020111 | 3 | 0.0011065
+201111 | 3 | 0.0011068
+112111 | 3 | 0.0008826
+210211 | 3 | 0.0011065
+121211 | 3 | 0.0009996
+002211 | 3 | 0.0008826
+220021 | 3 | 0.0008025
+221012 | 3 | 0.0008025
+010022 | 3 | 0.0007912
+101022 | 3 | 0.0006897
+200122 | 3 | 0.0007912
+022122 | 3 | 0.0004813
+211222 | 3 | 0.0006897",3,
+0,3&,"KODAS  |ATS| TIKIMYBE
+000000 | 3 | 0.0011068
+111000 | 3 | 0.0011065
+222000 | 3 | 0.0010809
+210100 | 3 | 0.0011068
+021100 | 3 | 0.0010964
+102100 | 3 | 0.0009991
+120200 | 3 | 0.0009895
+201200 | 3 | 0.0011065
+012200 | 3 | 0.0009991
+100011 | 3 | 0.0011065
+011011 | 3 | 0.0011068",3,
+0,14&7,pratybos bagesi sekmin,14,7
+0,10&10,sauletaszkrantas,10,10
+0,11&2,PAJURIOASMELIS,11,2
+0,9&7,RIEŠUTAS,9,7
+0,1&1,Riebus sviestas,1,1
+0,1&5,"4. Papildymas
+T(6) - 0.027
+Hammingas - 0.084
+Greiciausiai perduodama su ST(3,4), nes prireikia maziausiai bitu(40 bitu)   ",1,5
+0,13&3,"UKŠTI KRYŽIAI, SUKRYPĘ IR SUVA",13,3
+0,1&3,platus laukas  ,1,3
+0,12&12,pavyko@atlikte ,12,12
+0,1&3,Platus laukas,1,3
+1,5&9,"Ats1: GERINORAIA
+Ats2: LAUKINEOBELISA",5,9
+1,10&14,dulketas kelias,10,14
+1,9&6,STIPRYBĖĖSAB,9,6
+1,4&25,"212211 -  202211
+102110 -  112110
+101102 -  101122
+012202 -  002202
+102210 -  102220
+212102 -  212101
+202011 -  202211
+222012 -  022012
+212202 -  210202
+011022 -  011021
+010000 -  000000
+202011 -  202211
+
+ats: STIPRUSVEJAS",4,25
+1,1&4,"1. grynas vanduo
+2. geros dienos
+3. geros dienos",1,4
+1,8&11,"vasarotoja
+miesto balsa",8,11
+1,2&22,"Be kodavimo p = 0.501331600000000
+
+Didžiausio tikėtinumo p = 0.725558440000000
+c1 gaunamas iš: 000, 010, 110
+c2 gaunamas iš: 100, 101
+c3 gaunamas iš: 001, 011, 111",2,22
+1,2&22,"Idealaus stebėtojo p = 0.725558440000000
+c1 gaunamas iš: 000, 010, 110
+c2 gaunamas iš: 100, 101
+c3 gaunamas iš: 001, 011, 111
+
+I(X,Y) be kodavimo: 0.563804240127886
+I(X,Y) abiem būdais: 1.01195790439899",2,22
+2,13&5,atstumuose.mirksedamo,13,5
+2,3&1,"A_2(8,3) bounds: [6.92, 28.44]",3,1
+2,9&4,Ketvirtis,9,4
+2,2&12,"Teisingo perdavimo tikimybės vidurkis be kodavimo: 0.4502904
+Didžiausio tikėtinumo dekodavimo taisyklės:
+010 -  000, 010, 110
+100 -  100, 101
+011 -  001, 011, 111
+Idealaus stebėtojo dekodavimo taisyklės:
+010 -  010
+100 -  000, 100, 101, 110
+011 -  001, 011, 111",2,12
+2,4&,    STORASPOMIDORAS,4,
+2,5&13,"RUDENSLIETUS
+LAUKINEOBELISA",5,13
+2,15&4,keistaszenkl,15,4
+2,12&8,tvarkingi@namai,12,8
+2,14&16,amen ardsa dievas,14,16
+2,11&12,MELYNAS DANGUS,11,12
+2,2&12,"Didžiausio tikėtinumo: 0.671888
+Idealaus stebėtojo: 0.6932912
+Kai nekoduojama, kanalu perduodamas informacijos kiekis: 0.50553147
+Kai koduojama abiem būdais, kanalu perduodamas informacijos kiekis: 1.00639151",2,12
+2,7&25,RIEŠUTASS,7,25
+2,1&4.1,grynas vanduo,1,4.1
+2,1&4.3,geros dienos,1,4.3
+2,1&4.2,geros dienos,1,4.2
+2,6&8,"""Apgavystės tikimybė"" kai p=0,1: 0.103344
+
+""Apgavystės tikimybė"" kai p=0,05: 0.0224535",6,8
+2,10&9,svetimas dangus,10,9
+2,8&10,Vasarotojai,8,10
+3,12&5,baigesi pratybos,12,5
+3,9&1,TRAGIŠKAS,9,1
+3,8&1,miesto balsadetektyva,8,1
+3,4&8,TIESUSKELIAS,4,8
+3,6&3,"[1, 0, 6, 10, 48, 54, 88, 24, 12]
+
+p = 0.1, apgavystes tikimybe = 0.041408
+p = 0.05, apgavystes tikimybe = 0.012254
+
+savidualaus:
+[1, 0, 0, 0, 60, 24, 40]",6,3
+3,5&15,"1. GERINORAIA
+2. RUDENSLIETUS",5,15
+3,13&3,"UKŠTI KRYŽIAI, SUKRYPĘ IR SUVA",13,3
+3,15&14,staigusposuk,15,14
+3,3&,"[1, 1, 0, 1, 0, 0, 1, 0] | 3
+[0, 0, 1, 1, 0, 0, 1, 0] | 3
+[0, 1, 0, 0, 1, 0, 1, 0] | 3
+[1, 0, 1, 0, 1, 0, 1, 0] | 3
+[1, 0, 0, 0, 0, 1, 1, 0] | 3
+[0, 1, 1, 0, 0, 1, 1, 0] | 3
+[0, 0, 0, 1, 1, 1, 1, 0] | 3
+[1, 1, 1, 1, 1, 1, 1, 0] | 3
+
+Apgavystės tikimybė ~0.0033325",3,
+3,3&,"A_2(8,3) viršus 28, apačia 7
+
+[0, 0, 0, 0, 0, 0, 0, 0] | 3
+[1, 1, 1, 0, 0, 0, 0, 0] | 3
+[1, 0, 0, 1, 1, 0, 0, 0] | 3
+[0, 1, 1, 1, 1, 0, 0, 0] | 3
+[0, 1, 0, 1, 0, 1, 0, 0] | 3
+[1, 0, 1, 1, 0, 1, 0, 0] | 3
+[1, 1, 0, 0, 1, 1, 0, 0] | 3
+[0, 0, 1, 0, 1, 1, 0, 0] | 3",3,
+3,2&26,"Vidurkis be kodavimo: 0.405588
+
+Didžiausio tikėtinumo: 0.65282725
+010 dekoduojama iš 000, 010 ir 110
+100 dekoduojama iš 100 ir 101
+011 dekoduojama iš 001, 011 ir 111
+
+Idealaus stebėtojo: 0.65282725
+010 dekoduojama iš 000, 010 ir 110
+100 dekoduojama iš 100 ir 101
+011 dekoduojama iš 001, 011 ir 111",2,26
+3,11&14,MELYNAS DANGUS,11,14
+3,14&6,silti tvarknbi namai,14,6
+3,10&8,tolimas kelias,10,8
+3,7&8,DRAUGYSTĖ,7,8
+3,1&4,"1. grynas vanduo
+2. geros dienos
+3. geros dienos",1,4
+4,2&,"0.4850912
+
+0.7059653",2,
+4,10&15,ramusvakaras,10,15
+4,7&14,"INTEGRATE? INTEGRALE?
+
+Nepavyko rasti paskutinių dviejų raidžių.
+Taip pat pastebėjau, kad prieš tai buvusiuose namų darbuose ne taip nurodžiau numerius (numeravau 1, 2, 3... iš eilės, o reikėjo žymėti numerį kurį gavau).",7,14
+4,9&12,RIEŠUTASSSCD,9,12
+4,5&1,"1. PILKASDANGUS
+2. STIPRUSVEJAS",5,1
+4,1&3,margas lapas,1,3
+4,1&1,platus laukas,1,1
+4,8&2,"detektyvas ašarotoja?
+detektyva vasarotoja?
+",8,2
+4,4&1,SAUGUS GREITIS,4,1
+4,1&2,geros dienos,1,2
+5,13&7,"EKVIENAS ŽMOGUS, BŪDAMAS VIS K",13,7
+5,5&14,"PILKASDANGUS
+STIPRUSVEJAS",5,14
+5,3&3,20. [01011110]   |   3   |   0.0004292233984375,3,3
+5,3&3,"13. [11110101]   |   3   |   0.0005203483984375
+14. [00001101]   |   3   |   0.0006218796484375
+15. [00111001]   |   3   |   0.0006218796484375
+16. [10111111]   |   3   |   0.0007132577734375
+17. [00101010]   |   3   |   0.0007132577734375
+18. [11101000]   |   3   |   0.0004292233984375
+19. [00010111]   |   3   |   0.0006221327734375",3,3
+5,3&3,"06. [01101111]   |   3   |   0.0005203483984375
+07. [10100110]   |   3   |   0.0006218796484375
+08. [11011001]   |   3   |   0.0005203483984375
+09. [01110010]   |   3   |   0.0005203483984375
+10. [10011100]   |   3   |   0.0007132577734375
+11. [00000000]   |   3   |   0.0007132577734375
+12. [10100001]   |   3   |   0.0006221327734375",3,3
+5,4&23,SAUGUSGREITIS,4,23
+5,6&8,"Savidualaus kodo svoriai: A0=1, A1=0, A2=0, A3=0, A4=60, A5=24, A6=40
+    ",6,8
+5,3&3,"7,(1)  = A_2(8, 3)  = 28,(4)
+
+      ŽODIS       ATSTUMAS   APGAVYSTES TIKIMYBE 
+01. [01000011]   |   3   |   0.0005203483984375
+02. [10001011]   |   3   |   0.0007132577734375
+03. [10010010]   |   3   |   0.0006218796484375
+04. [11000100]   |   3   |   0.0005203483984375
+05. [00110100]   |   3   |   0.0007132577734375",3,3
+5,6&8,"Kodo svoriai: A0=1, A1=0, A2=8, A3=48, A4=168, A5=232, A6=168
+Apgavystes tikimybe, kai p=0.1: 0.103371
+Apgavystes tikimybe, kai p=0.05: 0.022454390625",6,8
+5,8&13,"[1]. detektyva
+[2]. vasarotoja",8,13
+5,2&29,Teisingo perdavimo tikimybes vidurkis be kodavimo: 0.5490184,2,29
+5,2&29,"Informacijos kiekis be kodavimo: 0.6860248207483037
+Informacijos kiekis koduojant didziausio tiketinumo taisykle: 0.8982963904457187
+Informacijos kiekis koduojant idealaus stebetojo taisykle: 1.0984484580986018",2,29
+5,2&29,"Didziausio tiketinumo taisykle: 
+010 dekoduojamas is 010
+100 dekoduojamas is 100, 101
+011 dekoduojamas is 001, 011, 111
+Teisingo perdavimo tikimybes vidurkis: 0.7018093
+
+Idealaus stebetojo taisykle:
+010 dekoduojamas is 000, 010, 110
+100 dekoduojamas is 100, 101
+011 dekoduojamas is 001, 011, 111
+Teisingo perdavimo tikimybes vidurkis: 0.7675057",2,29
+5,10&1,gerasdaiktas    ,10,1
+5,1&5,"[1]. riebus sviestas
+[2]. platus laukas
+[3]. Platus laukas
+[4]. Tikimybes:
+St(3,4) = 0.15346
+T(3) = 0.29359 
+Hamming’o(7,4) = 0.37796
+Greiciausi St(3,4) ir T(3) kodai, nes uztenka 40 bitu 24 bitu zinutei perduoti. Vis delto, patikimiausias yra Hamming'o(7,4) kodas.",1,5
+5,9&15,KEISTUMAS(SCD),9,15
+5,7&6,DIDINGASS    ,7,6
+6,11&15,PAJURIO SMELIS,11,15
+6,10&5,keistas veidas,10,5
+6,5&13,"RUDENSLIETUS
+LAUKINEOBELISA
+    ",5,13
+6,12&4,pavyko@atlikti,12,4
+6,13&9,TAS VISAKS BUVO PO TIEK LAIKO,13,9
+6,8&4,"1. vasarotoja
+2. miesto balsa
+",8,4
+6,7&7,RIEŠUTASS,7,7
+6,6&10,"Kodo svoriai:
+[1,0,6,96,396,948,954]
+ 0 1 2 3   4   5   6
+
+Apgavystės tikimybės:
+p=0.1 -  0.150912
+p=0.05 -  0.025036125
+
+Savidualaus kodo svoriai:
+[1, 0, 0, 0, 60, 24, 40]
+ 0  1  2  3  4   5    6",6,10
+6,14&10,atviras nam langas,14,10
+6,15&4,keistaszenkl,15,4
+6,9&13,RIEŠUTASERBD,9,13
+6,4&14,VASAROSPABAIGA,4,14
+6,3&1,"A_2(8,3)  = [7, 28]
+Kodas C:
+  00000000   | 3
+  00000111   | 3
+  00011001   | 3
+  00011110   | 3
+  00101010   | 3
+  00101101   | 3
+  00110011   | 3
+  00110100   | 3
+  01001011   | 3
+  01001100   | 3
+  01010010   | 3
+  01010101   | 3
+  01100001   | 3
+  01100110   | 3
+  01111000   | 3
+  01111111   | 3
+Apgavystes tikimybe: 0.000712
+",3,1
+6,1&2,"1. saldus vargas
+2. geras noras
+3. stora siena",1,2
+6,2&9,"p0 be kodavimo: 0.38829899999999995
+
+DTT:
+010 -  000, 010, 110
+100 -  100, 101, 
+011 -  001, 011, 111
+p1 = 0.6397857499999999
+
+IST:
+010 -  010
+100 -  000, 100, 101, 110
+011 -  001, 011, 111
+p2 = 0.65661275
+
+H = 1.0493142403925217
+I(X,Y) be kodavimo:  0.22030516340957207
+I(X,Y) DTT: 0.4520718485703884
+I(X,Y) IST: 0.7772215051950411",2,9
+7,1&3,"1. platus laukas
+2. geros dienos
+3. margas lapas",1,3
+7,8&9,detektyvavasarotoja,8,9
+7,2&30,"Idealaus stebėtojo dekodavimo taisyklė:
+c1 -  d3
+c2 -  d1, d5, d6, d7
+c3 -  d2, d4, d8",2,30
+7,15&3,stiprusvejas    ,15,3
+7,9&13,RIEŠUTAS    ,9,13
+7,12&18,raudonas@obuolys,12,18
+7,5&13,"1)RUDENSLIETUS
+2)LAUKINEOBELISA     ",5,13
+7,10&1,gerasdaiktas    ,10,1
+7,3&-,"c15   10110001  |  3  |  0.0007135116015624999
+c16   11111101  |  3  |  0.0006216258203124998
+c17   10111010  |  3  |  0.0008246883203125
+c18   00101001  |  3  |  0.0006216258203124998
+c19   00100110  |  3  |  0.0006216258203124999
+c20   01110000  |  3  |  0.0006216258203125    ",3,-
+7,14&5,paklauskitevykinto kum,14,5
+7,3&-,"c8   01011011  |  3  |  0.0005251711328124999
+c9   00011100  |  3  |  0.0004340461328124999
+c10   10000000  |  3  |  0.0005251711328124999
+c11   01101010  |  3  |  0.0007135116015624997
+c12   10010111  |  3  |  0.0005251711328124998
+c13   10001011  |  3  |  0.0007084350390625001
+c14   00111111  |  3  |  0.0007135116015624998    ",3,-
+7,3&-,"c1   00010010  |  3  |  0.0007084350390625
+c2   01100101  |  3  |  0.0005104491015624999
+c3   11001110  |  3  |  0.0005251711328124999
+c4   11110110  |  3  |  0.0007135116015625001
+c5   10101100  |  3  |  0.0007135116015624998
+c6   11100011  |  3  |  0.0005305008203124999
+c7   11011000  |  3  |  0.0007084350390625001",3,-
+7,4&23,SAUGUSGREITIS,4,23
+7,7&28,DRAUGYSTĖ,7,28
+7,2&30,"Teisingo perdavimo tikimybės vidurkis: 
+1-uoju būdu: 0.642145
+2-uoju būdu: 0.6563746",2,30
+7,3&-,"Dydis A_2(8,3)
+iš apačios: 7 (6.9189)
+iš viršaus: 28 (28.444)   ",3,-
+7,2&30,"Informacijos kiekis perduodamas kanalu nekoduojant: I(X,Y)=0.3999316",2,30
+7,11&13,MELYNAS DANGUS    ,11,13
+7,13&10,"S AUKŠTI KRYŽIAI, SUKRYPĘ IR S    ",13,10
+7,2&30,"Didžiausio tikėtinumo taisyklė:
+c1- d1, c1- d3
+c2- d5, c2- d6, c2- d7
+c3- d2, c3- d4, c3- d8     ",2,30
+7,2&30,Teisingo perdavimo tikimybės vidurkis be kodavimo: p=0.3969196,2,30
+8,2&11,"Teisingo perdavimo tikimybės vidurkis be kodavimo: 0.5013333
+Didžiausio tikėtinumo taisyklė:
+C1 -  d3
+C2 -  d5
+C3 -  d4
+Vidurkis: 1.0026666
+Idealaus stebetojo:
+C1 -  d3
+C2 -  d5
+C3 -  d4
+Vidurkis: 2.851075843
+",2,11
+8,7&3,    KETVIRTIS,7,3
+8,3&3,"    Kodo C tesinys:
+ [0, 1, 0, 0, 1, 0, 1, 0] |3
+ [1, 0, 1, 0, 1, 0, 1, 0] |3
+ [1, 0, 0, 0, 0, 1, 1, 0] |3
+ [0, 1, 1, 0, 0, 1, 1, 0] |3
+ [0, 0, 0, 1, 1, 1, 1, 0] |3
+ [1, 1, 1, 1, 1, 1, 1, 0] |3
+ [1, 1, 1, 0, 0, 0, 0, 0] |3
+Apgavystes tikimybe: 0.000712693710937500",3,3
+8,3&3," Kodas C:
+ [0, 0, 0, 0, 0, 0, 0, 0] |3
+ [1, 0, 0, 1, 1, 0, 0, 0] |3
+ [0, 1, 1, 1, 1, 0, 0, 0] |3
+ [0, 1, 0, 1, 0, 1, 0, 0] |3
+ [1, 0, 1, 1, 0, 1, 0, 0] |3
+ [1, 1, 0, 0, 1, 1, 0, 0] |3
+ [0, 0, 1, 0, 1, 1, 0, 0] |3
+ [1, 1, 0, 1, 0, 0, 1, 0] |3
+ [0, 0, 1, 1, 0, 0, 1, 0] |3
+",3,3
+8,15&1,    geras oras,15,1
+8,3&3,"Iš apačios:7 
+Iš viršaus:32
+",3,3
+8,1&1,    stora siena,1,1
+8,9&1,    TRAGIŠKAS,9,1
+8,1&3,    margas lapas,1,3
+8,1&2,    saldus vargas,1,2
+8,1&1,"    1.stora siena
+    2.saldus vargas
+    3.margas lapas",1,1
+8,6&7,"1.
+A=[1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0]
+W=3*y^9 + 13*y^8 + 28*y^7 + 48*y^6 + 66*y^5 + 58*y^4 + 28*y^3 + 8*y^2 + 3*y + 1
+a0=1, a1=3, a2=8, a3=28, a4=58, a5=66, a6=48, a7=28, a8=13, a9=3, 
+Kai p=0.1, tikimybe 0.1675615599
+Kaip p=0.05, tikimybe 0.1105330608
+2.
+a1=0, a2=0, a3=0, a4=60, a5=24, a6=40",6,7
+8,5&13,"1. RUDENS LIETUS
+2. LAUKINE OBELIS",5,13
+8,4&5,STIPRUS VYNAS,4,5
+8,13&17,    S MINTIMIS NEAPRĖPTUOSE ATSTUM,13,17
+9,8&4,vasarotoja miesto,8,4
+9,1&3,"1. platus laukas
+2. geros dienos
+3. eaBgas lapa3",1,3
+9,5&11,"1. GERINORAIA
+2. SAUGUSGREITISA",5,11
+9,1&3,3. margas lapas,1,3
+9,14&5,paklauskite vykinto kum,14,5
+9,15&1,gerasoras,15,1
+9,9&12,RIEŠUTAS,9,12
+10,4&3,Tekstas: OROBALIONAS,4,3
+10,5&5,"Tekstas: SVARBUSASMUO
+TIESUSKELIAS",5,5
+10,8&14,"Vasarotoja balsavasarotoja
+",8,14
+10,6&6,"""Apgavystės tikimybė"", kai p=0,1: 0,08696
+""Apgavystės tikimybė"", kai p=0,05: 0,0158925
+
+Duoto kodo svoriai: [[1,0], [0,1], [4,2], [64,3], [144,4], [248,5], [164,6]]",6,6
+10,7&25,Siųstas žodis: DROVUMASS,7,25
+10,9&13,RIEŠUTASERBD,9,13
+10,12&4,pavyko@atlikti  ,12,4
+10,2&1,"3. Teisingo perdavimo tikimybės vidurkiai:
+Didžiausio tikėtinumo: 0.791206
+Idealaus stebėtojo: 0.791206
+4. Kai nekoduojama, kanalu perduodamas informacijos kiekis: 0.7861138903
+5. Kai koduojama abiem būdais, kanalu perduodamas informacijos kiekis: 1.1227286927",2,1
+10,2&1,"1. Teisingo perdavimo tikimybės vidurkis be kodavimo: 0.604844
+2. Didžiausio tikėtinumo dekodavimo taisyklės:
+010 -  000, 010, 110
+100 -  100, 101
+011 -  001, 011, 111
+Idealaus stebėtojo dekodavimo taisyklės:
+010 -  000, 010, 110
+100 -  100, 101
+011 -  001, 011, 111",2,1
+10,10&9,svetimas dangus,10,9
+10,1&1,"1. stora siena
+2. saldus vargas
+3. margas lapas",1,1
+10,15&13,traukoscentr    ,15,13
+10,14&13,status namo stogas,14,13
+10,11&7,KLEVO LAPAS,11,7
+10,13&17,SU MINTIMIS NEAPRĖPIAMAS,13,17
+11,7&27,MANDAGUMA,7,27
+11,2&27,"Teisingo perdavimo tikimybės vidurkis be kodavimo: 0,40558464
+",2,27
+11,11&6,KLEVO LAPAS,11,6
+11,13&15,ŽIUOAJNČIUS AUTOMOBILIUS  ĮSTR,13,15
+11,6&8,"Kodo svoriai: [[1, 0], [0, 1], [8, 2], [48, 3], [168, 4], [232, 5], [168, 6]]
+
+""Apgavystės tikimybė"" su p=0,1: 0.103344
+
+""Apgavystės tikimybė"" su p=0,05: 0.0224535",6,8
+11,2&27,"Didžiausio tikėtinumo dekodavimo taisyklės:
+010  - 000, 010, 110
+100  - 100, 101
+011  - 001, 011, 111
+",2,27
+11,2&27,"Idealaus stebėtojo dekodavimo taisyklės:
+010  - 010,
+100  - 000, 100, 101, 110
+011  - 001, 011, 111",2,27
+11,9&13,RIEŠUTASERBD,9,13
+11,14&10,atviras nam langas,14,10
+11,8&11,miesto balsavasarotoja,8,11
+11,12&10,paklauskite@Vykinto,12,10
+11,2&27,"Teisingo perdavimo tikimybės vidurkis su kodavimu abiem būdais:
+1) Didžiausio tikėtinumo: 0.6444902400000001
+2) Idealaus stebėtojo: 0.65914304",2,27
+11,5&9,"GERINORAI
+LAUKINEOBELIS",5,9
+11,2&27,"Informacijos kiekis perduodamas kanalu, kai nekoduojama: 0.3868357098632771
+",2,27
+11,2&27,"Informacijos kiekis perduodamas kanalu, kai nekoduojama: 0.411677290447595",2,27
+11,4&7,Perskaitytas tekstas: TIESUSKELIAS,4,7
+11,4&7,"111110 -  112110
+111122 -  101122
+210200 -  210202
+202210 -  202211
+212111 -  212101
+202201 -  202211
+111212 -  111012
+210201 -  210202
+111000 -  211000
+201122 -  101122
+000002 -  000000
+202111 -  202211",4,7
+11,1&2,"1. saldus vargas
+2. geras noras
+3. stora siena",1,2
+12,7&25,DROVUMASS,7,25
+12,8&11,miesto balsavasarotoja,8,11
+12,13&4,"ERVAKARO ŽARAS, TOLYN, LYG Į K
+",13,4
+12,2&24,"IST:
+010 dekoduojamas iš 000, 010, 110
+100 dekoduojamas iš 100, 101
+011 dekoduojamas iš 001, 011, 111
+teisingo perdavimo tikimybės vidurkis = 0.5088
+
+I(X,Y) = 1.0328045296173478 (nekoduojama)
+I(X,Y) = 0.4190697939207175 (koduojama)",2,24
+12,2&24,"Teisingo perdavimo tikimybės vidurkis be kodavimo: 0.4090
+
+DTT:
+010 dekoduojamas iš 000, 010, 011, 110
+100 dekoduojamas iš 100, 101
+011 dekoduojamas iš 001, 111
+teisingo perdavimo tikimybės vidurkis = 0.4856",2,24
+12,6&9,"[[1, 0], [0, 1], [12, 2], [72, 3], [432, 4], [924, 5], [960, 6]]
+P_a su p=0.1: 0.019247999999999994
+P_a su p=0.05: 0.011830124999999999    ",6,9
+12,11&1,SMARKUSZVEJAS    ,11,1
+12,5&15,"1. GERINORAIA
+2. RUDENSLIETUS",5,15
+12,9&4,KETVIRTIS,9,4
+12,1&5,"1. riebus sviestas
+2. platus laukas
+3. platus laukas    ",1,5
+12,3&,"    3.0476190476190474  = A_2(8,3)  = 9.142857142857142
+[0, 0, 0, 0, 0, 0, 0, 0] | 1 | 0.14711510074218745
+[1, 0, 0, 0, 0, 0, 0, 0] | 1 | 0.14711510074218748
+[0, 1, 0, 0, 0, 0, 0, 0] | 1 | 0.11229495855468748
+[1, 1, 0, 0, 0, 0, 0, 0] | 1 | 0.11229495855468748
+[0, 0, 1, 0, 0, 0, 0, 0] | 1 | 0.11229495855468748
+[1, 0, 1, 0, 0, 0, 0, 0] | 1 | 0.11229495855468748",3,
+12,3&,"[0, 1, 1, 0, 0, 0, 0, 0] | 1 | 0.11046231949218746
+[1, 1, 1, 0, 0, 0, 0, 0] | 1 | 0.11046231949218747
+[0, 0, 0, 1, 0, 0, 0, 0] | 1 | 0.07564217730468749
+[1, 0, 0, 1, 0, 0, 0, 0] | 1 | 0.07564217730468749",3,
+12,14&17,"arteja semetro galas  
+",14,17
+12,12&11,status@stogas    ,12,11
+12,4&7,TIESUSKELIAS,4,7
+12,10&12,pilki debesys,10,12
+13,12&1,    teisingai padarete,12,1
+13,15&12,    riesutu duona,15,12
+13,1&1,    platus laukas,1,1
+13,1&3,    1. platus laukas (PATAISYMAS),1,3
+13,3&1,"c08 (11011100) | 3 | 0.000525410156250000
+c09 (01110111) | 3 | 0.000515257734375000
+c10 (11100110) | 3 | 0.000621611718750000
+c11 (11100001) | 3 | 0.000611979609375000
+c12 (10101000) | 3 | 0.000621611718750000
+c13 (01111000) | 3 | 0.000520334296875000
+c14 (01101101) | 3 | 0.000712989843750000
+c15 (11001111) | 3 | 0.000708167109375000",3,1
+13,1&3,    2. geros dienos,1,3
+13,3&1,"7 = A_2(8,3) = 28;
+
+Pateikiamas pavyzdys, kai kodo dydis - 19;
+c01 (00001001) | 3 | 0.000611712421875000
+c02 (10000101) | 3 | 0.000525157031250000
+c03 (10111111) | 3 | 0.000520080468750000
+c04 (01001010) | 3 | 0.000616535156250000
+c05 (00010000) | 3 | 0.000515003906250000
+c06 (00101110) | 3 | 0.000616788984375000
+c07 (10011010) | 3 | 0.000606635859375000",3,1
+13,2&11,"4. I(X,Y) (be kodavimo) = 0.5943526;
+   I(X,Y) (su kodavimu abiem būdais) = 1.0719424;",2,11
+13,2&11,"2. Didžiausio tikėtinumo:
+c1(010) yra dekoduojamas iš: 000, 010, 110;
+c2(100) yra dekoduojamas iš: 100, 101;
+c3(011) yra dekoduojamas iš: 001, 011, 111;
+p2 = 0.72912078;
+
+3. Idealaus stebėtojo:
+c1(010) yra dekoduojamas iš: 000, 010, 110;
+c2(100) yra dekoduojamas iš: 100, 101;
+c3(011) yra dekoduojamas iš: 001, 011, 111;
+p3 = 0.72912078;",2,11
+13,9&8,    KARTĖLIS,9,8
+13,1&3,    3. margas lapas,1,3
+13,1&3,"Gautos tikimybės:
+St(3,4) = 0,153465,
+T(4) = 0,293592,
+Hamming'o = 0,377963.
+Kaip matoma, remiantis rezultatais patikimiausias yra Hamming'o.",1,3
+13,14&20,atviras namo langas,14,20
+13,13&5,    ATSTUMUOSE.MIRKSĖDAMOS SLINKO,13,5
+13,2&11,1. Perdavimo tikimybės vidurkis be kodavimo: p1 = 0.5013333;,2,11
+13,11&9,    KLEVO LAPAS,11,9
+13,10&3,    lauktas svecias,10,3
+13,3&1,"c16 (11010011) | 3 | 0.000423625781250000
+c17 (00100011) | 3 | 0.000428955468750000
+c18 (10110100) | 3 | 0.000611712421875000
+c19 (01000100) | 3 | 0.000616788984375000",3,1
+13,8&10,Vasarotojai,8,10
+13,5&3,"1. SVARBUSASMUO
+2. RUDENSLIETUS",5,3
+13,6&7,"2. Savidualaus kodo žodžiai:
+
+Svoris | Kiekis, kiek atitinkamo svorio žodžių kode:
+0      | 1
+1      | 0
+2      | 0
+3      | 0
+4      | 60
+5      | 24
+6      | 40",6,7
+13,7&24,    STIPRYBĖĖ,7,24
+13,4&15,Gautas atsakymas: STIPRUSVYNAS,4,15
+13,6&7,"1.
+Svoris | Kiekis, kiek atitinkamo svorio žodžių kode
+0      | 1
+1      | 1
+2      | 2
+3      | 7
+4      | 12
+5      | 17
+6      | 14
+7      | 5
+8      | 3
+9      | 2
+10     | 0
+
+Kai p =  0.1, tai P = 0.05144715;
+Kai p = 0.05, tai P = 0.03550004;",6,7
+14,6&10,"Kodo svoriai:
+svoris | žodžių skaičius
+ 0 | 1
+ 1 | 0
+ 2 | 6
+ 3 | 96
+ 4 | 396
+ 5 | 948
+ 6 | 954",6,10
+14,4&7,TIESUSKELIAS,4,7
+14,2&27,"Perduodamos informacijos kiekis, kai koduojama: I = 1,01170626 bito",2,27
+14,6&10,"Savidualaus kodo svoriai:
+svoris | žodžių skaičius
+ 0 | 1
+ 1 | 0
+ 2 | 0
+ 3 | 0
+ 4 | 60
+ 5 | 24
+ 6 | 40",6,10
+14,7&11,DROVUMAS,7,11
+14,2&27,"Teisingo perdavimo tikimybės vidurkis:
+Didžiausio tikėtinumo: 0.65105664
+Idealaus stebėtojo: 0.65914304",2,27
+14,2&27,"Didžiausio tikėtinumo dekodavimo taisyklės:
+000, 010 --  010
+100, 101, 110 --  100
+001, 011, 111 --  011
+
+Idealaus stebėtojo dekodavimo taisyklės:
+010 --  010
+000, 100, 101, 110 --  100
+001, 011, 111 --  011",2,27
+14,6&10,"Apgavystės tikimybės, kai:
+p=0.1: 0.150912
+p=0.05: 0.025036125",6,10
+14,1&3,"4 užduotis: Tikimybės:
+St(3, 4): 0.15346
+T(3): 0.29359
+Hammingo: 0.37796
+Patikimiausias kodas yra Hamming
+Greičiausi kodai perduoti 24 bitų tekstą yra St(3, 4) ir T(3), nes tekstą užkodavus abejais kodais 
+gaunamas vienodas pranešimo ilgis (40 bitų) ir jis yra trumpesnis nei Hammingo kodo pranešimo ilgis (42 bitai).",1,3
+14,11&5,PAJURIO SMELIS,11,5
+14,13&10,"AUKŠTI KRYŽIAI, SUKRYPĘ IR",13,10
+14,1&3,3 užduotis: margas lapas,1,3
+14,12&8,tvarkingi namai,12,8
+14,1&3,2 užduotis: geros dienos,1,3
+14,5&7,"[1] LAUKINEOBELISA
+[2] SAUGUSGREITISV",5,7
+14,1&3,1 užduotis: platus laukas,1,3
+14,3&3,apgavystės tikimybė (visiems kodo žodžiams vienoda): 0.0007126937109375,3,3
+14,10&5,keistas veidas,10,5
+14,2&27,Teisingo perdavimo be dekodavimo tikimybės vidurkis: 0.40558464,2,27
+14,3&3,"kodo žodis c | atstumas iki  kito artimiausio kodo žodžio
+  00000000   | 3
+  00000111   | 3
+  00011001   | 3
+  00011110   | 3
+  00101010   | 3
+  00101101   | 3
+  00110011   | 3
+  00110100   | 3
+  01001011   | 3
+  01001100   | 3
+  01010010   | 3
+  01010101   | 3
+  01100001   | 3
+  01100110   | 3
+  01111000   | 3
+  01111111   | 3",3,3
+14,15&14,staigusposuk,15,14
+14,8&4,"1. vasarotoja
+2. miesto balsa",8,4
+14,3&3,"A_2(8,3) įvertis: [7, 28] (toks pat, kaip ir prieš tai buvusiame atsakyme, tik jame kažkur dingo ženklai ""mažiau"")",3,3
+14,3&3,"A_2(8,3) įvertis:
+7  = A_2(8,3)  = 28",3,3
+14,2&27,"Perduodamos informacijos kiekis, kai nekoduojama: I = 0,41167729 bito",2,27
+14,14&13,status namo stogas,14,13
+14,9&12,RIEŠUTAS,9,12
+15,2&19,"be kodavimo: 0.456
+didžiausio tikėtinumo: 0.721
+idealaus stebėtojo: 0.721",2,19
+15,3&3,Apgaulės tikimybė ~0.057%,3,3
+15,3&3,"[1, 1, 0, 1, 0, 0, 1, 0] | 3
+[0, 1, 1, 1, 1, 0, 0, 0] | 3
+[0, 0, 1, 1, 0, 0, 1, 0] | 3
+[0, 1, 0, 0, 1, 0, 1, 0] | 3
+[1, 1, 1, 1, 1, 1, 1, 0] | 3
+[0, 0, 1, 0, 1, 1, 0, 0] | 3
+[1, 0, 1, 0, 1, 0, 1, 0] | 3
+[0, 1, 1, 0, 0, 1, 1, 0] | 3
+[0, 0, 0, 1, 1, 1, 1, 0] | 3",3,3
+15,11&1,SMARKUS VEJAS,11,1
+15,3&3,"7  = A_2(8,3)  = 28
+[0, 0, 0, 0, 0, 0, 0, 0] | 3
+[1, 1, 1, 0, 0, 0, 0, 0] | 3
+[1, 0, 0, 1, 1, 0, 0, 0] | 3
+[1, 0, 0, 0, 0, 1, 1, 0] | 3
+[0, 1, 0, 1, 0, 1, 0, 0] | 3
+[1, 0, 1, 1, 0, 1, 0, 0] | 3
+[1, 1, 0, 0, 1, 1, 0, 0] | 3",3,3
+15,7&10,DIDINGASS,7,10
+15,12&1,teisingai@padarete,12,1
+15,15&4,keistaszenkl,15,4
+15,4&15,STIPRUSVYNAS,4,15
+15,10&14,dulketas kelias,10,14
+15,1&5,"1. riebus sviestas
+2. platus laukas
+3. platus laukas
+4. Nekoduojant tikimybė, kad bus persiųstas tesingai gavau 0.0798. Koduojant su St(3,4) gavau 0.1535. Koduojant su T(6) gavau 0.0463, nes neatsižvelgiau į tai, kad antame bloke didžioji dalis bitų nepriklauso pranešimui. Su Hammingo kodu gavau 0.3780. Greičiausiai perduodami kodu St(3,4)",1,5
+15,14&17,arteja semetro galas,14,17
+15,13&4,"ERVAKARO ŽARAS, TOLYN, LYG Į K",13,4
+15,9&5,STIPRYBĖĖSAB,9,5
+15,8&1,miesto balsadetektyva,8,1
+15,5&5,"1) SVARBUSASMUO
+2) TIESUSKELIAS",5,5
+15,6&4,"kodo skirstinys: [1, 0, 0, 2, 8, 2, 6, 4, 4]
+dualaus kodo skirstinys: [[1, 0], [8, 2], [6, 3], [44, 4], [70, 5], [74, 6], [28, 7], [12, 8]]
+apgavystės tikimybė, p1 = 0.210307947429888, kai p = 0.1
+apgavystės tikimybė, p2 = 0.478440734415309, kai p = 0.05
+[[a0 == 1, a1 == 0, a2 == 0, a3 == 0, a4 == 60, a5 == 24, a6 == 40]]",6,4
+16,13&14,"    DAMAS VIS KITOKS, ALSUOJA SU K",13,14
+16,10&13,    RAUDONASDANGUS,10,13
+16,6&8,"    Kai p=0,1 apgavystės tikimybė yra 0,1033440.
+Kai p=0,05 apgavystės tikimybė yra 0,0224535.
+
+Savidualaus kodo svorių skirstiniai:
+[svoris, žodžių kode]
+[[0,1],[1,0],[2,0],[3,0],[4,60],[5,24],[6,40]]",6,8
+16,1&4,    grynas vanduo,1,4
+16,4&18,"Gauti žodžiai ir įstatyti žodžiai:
+201220 | 221220
+002220 | 102220
+221120 | 221220
+110021 | 100021
+000020 | 000000
+211020 | 211000
+102122 | 101122
+221222 | 221220
+021202 | 121202
+010000 | 000000
+202212 | 202211
+
+OROBALIONAS",4,18
+16,5&6,"1. PILKASDANGUS
+2. TIESUSKELIAS",5,6
+16,7&12,    INTEGRALA,7,12
+16,1&4,    saldus vargas,1,4
+16,1&3,    geros dienos,1,3
+16,1&1,    grynas vanduo,1,1
+16,1&2,    saldus vargas,1,2
+16,2&18,"Tikimybės vidurkis be kodavimo: p = 0.1361043
+
+Didžiausio tikėtinumo:
+010: 000, 010, 110
+100: 100, 101
+011: 001, 011, 11
+p = 0.3661965
+
+Idealaus stebėtojo:
+010: 
+100: 100
+011: 000, 001, 010, 011, 101, 110, 111
+p = 0.4955568
+
+Informacija perduodama, kai nekoduojama:
+I(X,Y) = 0.029972283
+
+Informacija perduodama, kai koduojama:
+I(X,Y) = 1.0194001",2,18
+16,11&15,    PAJURIO SMELIS,11,15
+17,&&,,,
+18,7&3,KETVIRTIS    ,7,3
+18,2&23,"1. P_0 = 0,5820093
+2. 
+Tikėtiniausia:
+d_1 -  c_1, d_2 -  c_3, d_3 -  c_1, d_4 -  c_3, d_5 -  c_2, d_6 -  c_2, d_7 -  c_1, d_8 -  c_3
+p=0.7781447
+Idealaus stebėtojo:
+d_1 -  c_1, d_2 -  c_3, d_3 -  c_1, d_4 -  c_3, d_5 -  c_2, d_6 -  c_2, d_7 -  c_1, d_8 -  c_3
+p=0.7781447
+4. I(X,Y) = 0.731982454333545
+5. I(X,Y) = 1.08876073598492",2,23
+18,5&2,"1. TIESUSKELIAS
+2. GERINORAIA",5,2
+18,8&4,vasarotoja miestoÆ6,8,4
+18,15&14,staigusposuk,15,14
+18,1&3,"1) platus laukas
+2) geros dienos
+3) margas lapas
+4) St(3,4) = 0.15346571054008015001
+T(3) = 0.293592355709602
+H(4,7) = 0.37796382529974637
+",1,3
+18,9&12,RIEŠUTASSSCD,9,12
+18,6&5,"P_0.1 = 0.025147960000000014
+P_0.05 = 0.011269018593750004",6,5
+18,13&10,"S AUKŠTI KRYŽIAI, SUKRYPĘ IR S",13,10
+18,10&14,atviras nam langas,10,14
+18,10&13,taufopasbfapgus,10,13
+18,4&6,Žodis: STORASPOMIDORAS,4,6
+18,3&,"[0, 1, 0, 0, 2, 2] | 4 | 0.00014251953125
+[0, 1, 1, 2, 0, 0] | 4 | 0.00011505859375
+[1, 2, 2, 1, 0, 2] | 4 | 0.0001737109375",3,
+18,3&,"[9.986301369863014, 56.07692307692308]
+[2, 1, 0, 1, 0, 1] | 4 | 0.00012951171875
+[2, 2, 1, 2, 2, 2] | 4 | 0.00024078125
+[1, 0, 0, 0, 0, 0] | 4 | 5.79003906251e-05
+[0, 2, 0, 2, 1, 1] | 4 | 0.0001603515625
+[0, 0, 1, 1, 1, 2] | 4 | 4.453125e-05
+[2, 0, 2, 1, 2, 0] | 4 | 0.000259921875
+[1, 1, 2, 0, 1, 1] | 4 | 7.386718751e-05
+
+",3,
+18,11&15,PAJURIO SMELIS,11,15
+18,12&6,ikyrus@uodas,12,6
+18,10&13,raudonasdangus    ,10,13
+18,6&5,"[[1, 0], [8, 2], [6, 3], [44, 4], [70, 5], [74, 6], [28, 7], [12, 8]]
+Apgavimo tikimybė su p=0.1: 0.0495179400000000
+Apgavimo tikimybė su p=0.05: 0.0155259825781250
+
+    ",6,5
+18,14&10,atviras nam langas,14,10
+19,5&10,"    RUDENSLIETUS
+    TIESUSKELIAS",5,10
+19,4&17,   STIPRUSVEJAS,4,17
+19,2&22,"3) 
+   c1 (010) dekoduojamas iš: 000, 010, 110
+   c2 (100) dekoduojamas iš: 100, 101
+   c3 (011) dekoduojamas iš: 001, 011, 111
+   p3 = 0.72555844
+4) I(X,Y) be kodavimo = 0.563804240127886
+   I(X,Y) koduojant abiem būdais = 1.01195790439899",2,22
+19,7&12,INTEGRALA    ,7,12
+19,8&5,miesto balsa detektyva,8,5
+19,9&18,STIPRYBĖĖSAB,9,18
+19,11&19,UILRASAGARSAS,11,19
+19,2&22,"1) p1 = 0.5013316
+2) 
+   c1 (010) dekoduojamas iš: 000, 010, 110
+   c2 (100) dekoduojamas iš: 100, 101
+   c3 (011) dekoduojamas iš: 001, 011, 111
+   p2 = 0.72555844",2,22
+19,12&15,rauuonasobuolys    ,12,15
+19,6&6,"p =  0.1, P = 0.0869600000000000
+p = 0.05, P = 0.0158925000000000",6,6
+19,10&6,sveikasprotas    ,10,6
+19,1&1,"1.  stora sienas
+2.  saldus vargas
+3.  margas lapas",1,1
+20,11&12,MELYNAS DANGUS,11,12
+20,1&4,"1. grynas vanduo
+2. geros dienos
+3. geros dienos
+4. 
+p_st = 0.410400318034810
+p_t = 0.0500372473476599 
+p_h = 0.0829697042863915",1,4
+20,4&2,STIPRUSVEJAS,4,2
+20,12&1,teisingai padarete,12,1
+20,10&2,"[1, 1, 0, 0, 1] -  s
+[0, 1, 1, 0, 1] -  v
+[1, 0, 0, 0, 0] -  a
+[0, 1, 0, 0, 1] -  r
+[0, 1, 0, 0, 0] -  b
+[1, 0, 1, 0, 1] -  u
+[1, 1, 0, 0, 1] -  s
+[0, 0, 1, 0, 0] -  d
+[1, 0, 1, 0, 0] -  e
+[1, 1, 0, 0, 1] -  s
+[0, 1, 1, 1, 0] -  n
+[1, 0, 0, 1, 0] -  i
+[1, 1, 0, 0, 1] -  s",10,2
+20,5&6,"1) PILKASDANGUS
+
+2) TIESUSKELIAS",5,6
+20,9&10,TRAGIŠKASSCD,9,10
+20,8&3,vasarotojai,8,3
+20,6&6,"1)kodo svoris:
+svoris- kodo zodziu skaicius
+0- 1
+1- 0
+2- 4
+3- 64
+4- 144
+5- 248
+6- 164
+
+P apgavystes = 0.08696, kai p = 0.1
+P apgavystes = 0.0158925, kai p = 0.05
+
+2)svoriu skirstiniai:
+svoris- kodo zodziu skaicius
+0- 1
+1- 0
+2- 0
+3- 0
+4- 60
+5- 24
+6- 40",6,6
+20,15&10,ramuqvafdefy,15,10
+20,13&17,SU MINTIMIS NEAPRĖPIAMAS,13,17
+20,2&14,"be kodavimo = 0.54982
+ 
+su didžiausio tikėtinumo taisykle = 0.76114555 
+grupė1: 000, 010, 110 
+grupė2: 100, 101 
+grupė3: 001, 011, 111 
+ 
+su idealaus stebėtojo taisykle = 0.76114555
+grupė1: 000, 010, 110
+grupė2: 100, 101
+grupė3: 001, 011, 111",2,14
+21,14&5,paklauskite vykinto kum,14,5
+21,12&8,tvarkingi namai,12,8
+21,8&12,vasarotojai,8,12
+21,1&4,"[1] grynas vanduo
+[2] geros dienos
+[3] geros dienos
+[4] St(3,4): p = 01366
+    T(6): p = 0.2762
+    Hammingo: p = 0.0830
+
+    Greičiausiai - St(3,4) (prireikia 40 bitų).",1,4
+21,13&16,ANI NUAVŽIUOAJNČIUS AUTOMOBILI,13,16
+21,11&6,KLEVO LAPAS,11,6
+21,13&16,NAI NUVAŽIUOJANČIUS AUTOMOBILI,13,16
+21,2&13,"[1] p1 (be kodavimo) = 0.4814835
+
+[2] DTT taisyklė:
+
+    c1 (010) dekoduojamas iš: 000, 010, 110
+    c2 (100) dekoduojamas iš: 100, 101
+    c3 (011) dekoduojamas iš: 001, 011, 111
+
+    p2 (koduojant su DTT) = 0.7090065
+",2,13
+21,2&13,"[3] IST taisyklė (gavosi tokia pati kaip DTT):
+
+    c1 (010) dekoduojamas iš: 000, 010, 110
+    c2 (100) dekoduojamas iš: 100, 101
+    c3 (011) dekoduojamas iš: 001, 011, 111
+
+    p3 (koduojant su IST) = 0.7090065
+
+[4] I(X,Y) (be kodavimo) = 0.528408795972438
+    I(X,Y) (koduojant DTT arba IST) = 0.996418803543474",2,13
+21,4&2,"Gautas žodis|Ištaisytas žodis
+202210      | 202211
+112112      | 112110
+101022      | 101122
+002102      | 002202
+202220      | 102220
+222101      | 212101
+202011      | 202211
+222012      | 022012
+210200      | 210202
+111021      | 011021
+000200      | 000000
+002211      | 202211
+
+STIPRUSVEJAS",4,2
+21,8&12,miesto balsadetektyva,8,12
+21,15&4,keistaszenkl,15,4
+21,1&4,"[1] grynas vanduo
+[2] geros dienos
+[3] geros dienos
+[4] St(3,4):  p = 0.1366
+    T(6):     p = 0.2762
+    Hammingo: p = 0.0830
+
+    Greičiausiai - St(3,4) (prireikia 40 bitų).
+",1,4
+21,3&.,"c12 (01110001) | 3 | 0.000424146796875000
+c13 (10110010) | 3 | 0.000708167109375000
+c14 (10010100) | 3 | 0.000525157031250000
+c15 (11111100) | 3 | 0.000713243671875000
+c16 (11101010) | 3 | 0.000621611718750000
+c17 (00001010) | 3 | 0.000606635859375000
+c18 (01011000) | 3 | 0.000616535156250000
+c19 (10111001) | 3 | 0.000621864843750000",3,.
+21,3&.,"c04 (10100101) | 3 | 0.000611712421875000
+c05 (10000011) | 3 | 0.000520080468750000
+c06 (01000110) | 3 | 0.000332500781250000
+c07 (00011101) | 3 | 0.000515257734375000
+c08 (11011011) | 3 | 0.000616788984375000
+c09 (11110111) | 3 | 0.000616535156250000
+c10 (11000000) | 3 | 0.000708167109375000
+c11 (00111110) | 3 | 0.000520080468750000",3,.
+21,3&.,"7  = A_2(8,3)  = 28
+
+Sudarytas kodas dydžio 19 (tokių gavosi daugiau nei vienas, pateikiamas vienas iš jų):
+
+  Kodo žodis   | Atstumas iki kito artimiausio kodo žodžio | Apgavystės tikimybė, kai šis kodo žodis siųstas
+c01 (11001101) | 3 | 0.000616535156250000
+c02 (01101111) | 3 | 0.000515257734375000
+c03 (00100000) | 3 | 0.000520080468750000",3,.
+21,5&4,"[1] ORO BALIONAS
+[2] GERI NORAI",5,4
+21,6&8,"[1.1] - kodo svoriai:
+
+svoris | kiek tokio svorio žodžių kode
+0      | 1
+1      | 0
+2      | 8
+3      | 48
+4      | 168
+5      | 232
+6      | 168",6,8
+21,3&.,"7  = A_2(8,3)  = 28
+
+Sudarytas kodas dydžio 18 (daug tokių gavosi, pateikiamas vienas iš jų):
+
+ Kodo žodis | Atstumas iki kito artimiausio kodo žodžio | Apgavystės tikimybė, kai šis kodo žodis siųstas
+c01 (00000000) | 3 | 0.00042336
+c02 (01111001) | 3 | 0.00051524
+c03 (11110000) | 3 | 0.00042869
+c04 (10010001) | 3 | 0.00060662",3,.
+21,10&10,"sauletas krantas
+",10,10
+21,6&8,"[1.2] kai p =  0.1, P(apgavystės) =  0.1033440
+      kai p = 0.05, P(apgavystės) =  0.0224535",6,8
+21,9&16,"KEISTUMAS
+",9,16
+21,3&.,"c13 (00110101) | 3 | 0.00052489
+c14 (01100111) | 3 | 0.00069800
+c15 (10101000) | 3 | 0.00051017
+c16 (00011010) | 3 | 0.00051524
+c17 (10011100) | 3 | 0.00061627
+c18 (10100110) | 3 | 0.00042843",3,.
+21,6&8,"[2] Savidualaus kodo svoriai:
+
+svoris | kiek tokio svorio žodžių kode
+0      | 1
+1      | 0
+2      | 0
+3      | 0
+4      | 60
+5      | 24
+6      | 40",6,8
+21,3&.,"c05 (10111111) | 3 | 0.00061170
+c06 (00001111) | 3 | 0.00042869
+c07 (11001110) | 3 | 0.00060662
+c08 (01010100) | 3 | 0.00070308
+c09 (01111110) | 3 | 0.00061627
+c10 (01010011) | 3 | 0.00051981
+c11 (11101011) | 3 | 0.00051474
+c12 (11000101) | 3 | 0.00042843",3,.
+21,7&7,RIEŠUTASS,7,7
+21,1&4,"[1] grynas vanduo
+[2] geros dienos
+[3] geros dienos
+[4] Nekoduojant: p = 0.0114
+    Hammingo:    p = 0.083
+    St(3,4):     p = 0.000227
+    T(6):        p = 0.00133
+
+    Greičiausiai - St(3,4) (prireikia 40 bitų).",1,4
+22,1&1,grynas vanduo,1,1
+22,1&2,geros dienos,1,2
+22,1&3,geros dienos,1,3
+22,5&3,"1 - SVARBUSASMUO
+2 - RUDENSLIETUS",5,3
+22,9&18,STIPRYBĖ,9,18
+22,12&2,status@stogas,12,2
+22,8&14,VASAROTOJ,8,14
+22,7&22,INTEGRALA,7,22
+22,8&14,VASAROTOJA BALSAVASAROTOJA,8,14
+22,13&9,TAS VISAKS BUVO PO TIEK LAIKO ,13,9
+22,4&11,"022211 -  021211
+000200 -  000000
+221202 -  121202
+112210 -  112110
+002000  -  000000
+202210 -  202211
+111002 -  111012
+000010 -  000000
+211002 -  211000
+121002 -  121202
+102122 -  101122
+220202 -  210202
+122110 -  112110
+101120 -  101122
+201211 -  202211
+
+MANTASKALNIETIS",4,11
+22,6&5,"p(0.1) = 0.0251479600000000
+p(0.05) = 0.0112690185937500",6,5
+22,2&23,"Idealaus stebėtojo:
+
+010 dekoduojamas iš - 000, 010, 110
+100 dekoduojamas iš - 100, 101
+011 dekoduojamas iš - 001, 011, 111
+
+p = 0.778144700000000",2,23
+22,2&23,"Didžiausio tikėtinumo:
+
+010 dekoduojamas iš  - 000, 010, 110
+100 dekoduojamas iš - 100, 101
+011 dekoduojamas iš - 001, 011, 111
+
+p = 0.778144700000000
+",2,23
+22,2&23,Vidurkis be kodavimo - 0.582009300000000,2,23
+22,2&23,"I(X,Y) be kodavimo -  0.731982454333545
+I(X,Y) koduojant anime būdais - 1.08876073598492",2,23
+23,14&9,atviras nam langas    ,14,9
+23,13&1,"Dekoduoti žodžiai:
+[5, 0, 18] ""DAM""
+[0, 23, 32] ""AS ""
+[29, 12, 23] ""VIS""
+[32, 16, 12] "" KI""
+[25, 20, 16] ""TOK""
+[23, 34, 32] ""S, ""
+[0, 17, 23] ""ALS""
+[26, 20, 15] ""UOJ""
+[0, 32, 23] ""A S""
+[26, 32, 16] ""U K""
+
+DAMAS VIS KITOKS, ALSUOJA SU K
+",13,1
+24,10&3,lauktas svecias,10,3
+24,11&14,melynas dangus,11,14
+24,9&18,stiprybė,9,18
+24,8&3,vasarotojai,8,3
+24,3&?,"01000110 | 3 | 0.0003325007813
+00011101 | 3 | 0.00051525773438
+11011011 | 3 | 0.00061678898438
+11110111 | 3 | 0.0006165351563
+11000000 | 3 | 0.00070816710938
+00111110 | 3 | 0.0005200804688
+01110001 | 3 | 0.00042414679688",3,?
+24,6&9,"2.
+svoris | kode esančių žodžių skaičius
+0 | 1
+1 | 0
+2 | 0
+3 | 0
+4 | 90
+5 | 108
+6 | 144",6,9
+24,3&?,"1.
+[7, 28]
+
+2.
+11001101 | 3 | 0.0006165351563
+01101111 | 3 | 0.00051525773438
+00100000 | 3 | 0.0005200804688
+10100101 | 3 | 0.00061171242188
+10000011 | 3 | 0.0005200804688",3,?
+24,6&9,"1.
+svoris | kode esančių žodžių skaičius
+0 | 1
+1 | 0
+2 | 12
+3 | 72
+4 | 432
+5 | 924
+6 | 960
+
+P(p=0.1) = 0.175488000000000
+P(p=0.05) = 0.0348776250000000",6,9
+24,5&7,"1. Laukine obelis
+2. Saugus greitis",5,7
+24,2&10,"1.
+p(be kod.) = 0.405584640000000
+
+2.
+Didžiausio tikėtinumo ir idealaus 
+stebėtojo taisyklės (tokios pat):
+c1(010) dekoduojamas iš: 000, 010, 110
+c2(100) dekoduojamas iš: 100, 101
+c3(011) dekoduojamas iš: 001, 011, 111
+
+3.
+p2(DTT) = 0.65419392
+p3(IST) = 0.65419392
+
+I(X,Y) be kod.: 0.385648969281509
+I(X,Y) su DTT ar IST: 0.981445319598843",2,10
+24,4&4,"1.
+211200 -  211000
+001000 -  000000
+202101 -  212101
+111011 -  111012
+101102 -  101122
+121200 -  121202
+210102 -  210202
+221020 -  221220
+100022 -  100021
+010202 -  210202
+011000 -  211000
+101102 -  101122
+202111 -  202211
+2.
+LAUKINEOBELIS",4,4
+24,3&?,"10110010 | 3 | 0.00070816710938
+10010100 | 3 | 0.0005251570313
+11111100 | 3 | 0.00071324367188
+11101010 | 3 | 0.0006216117188
+00001010 | 3 | 0.00060663585938
+01011000 | 3 | 0.0006165351563
+10111001 | 3 | 0.0006218648438",3,?
+24,7&5,Stiprybė,7,5
+24,1&1,"1. stora siena
+2. saldus vargas
+3. margas lapas",1,1

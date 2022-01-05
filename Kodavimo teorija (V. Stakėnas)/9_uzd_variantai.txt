@@ -1,0 +1,571 @@
+20#
+<pre>
+ 1 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 1, 3, 3, 3, 4]
+[0, 0, 1, '*', '*', 1]
+[1, 1, 4, 0, 2, 4]
+[2, 2, 0, 0, 4, 0]
+[3, '*', 3, '*', 2, 4]
+[0, 2, 4, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 2 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [4, 4, 4, 3, 2, 3]
+['*', 0, 3, 3, 4, '*']
+[0, 1, 1, 2, 2, 4]
+[2, 4, 2, 0, 0, 3]
+[3, '*', 3, 4, '*', 4]
+[0, 4, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 3 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [1, 4, 4, 3, 2, 3]
+[0, '*', 3, 3, 4, '*']
+[0, 0, 4, 2, 2, 4]
+[2, 0, 0, 0, 0, 3]
+[3, 4, '*', 4, 2, '*']
+[0, 2, 0, 1, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 4 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 2, 0, 4, 0, 1]
+[4, 1, 4, '*', '*', 2]
+[1, 4, 2, 3, 0, 3]
+[4, 1, 1, 4, 4, 2]
+['*', 4, 3, 4, 2, '*']
+[2, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 5 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [0, 4, 4, 1, 4, 0]
+[1, '*', 3, 2, '*', 4]
+[3, 3, 2, 0, 4, 1]
+[0, 1, 1, 0, 2, 2]
+[1, '*', 3, '*', 2, 1]
+[0, 0, 0, 3, 4, 4]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 6 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [0, 4, 4, 1, 4, 0]
+[1, 4, 3, 2, '*', '*']
+[3, 3, 2, 0, 4, 1]
+[0, 1, 1, 0, 2, 2]
+[1, 0, 3, '*', 2, 1]
+[0, 0, 0, 1, 3, 4]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 7 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 3, 3, 4, 1, 4]
+[0, 4, 4, 0, '*', '*']
+[4, 2, 4, 2, 2, 3]
+[0, 0, 4, 4, 3, 0]
+[3, 4, '*', 4, 2, '*']
+[0, 1, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 8 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [0, 2, 0, 0, 4, 0]
+[3, '*', 4, 1, 1, 1]
+[1, 0, 2, 3, 2, 4]
+[3, 4, 3, 4, 4, 2]
+[3, 4, 3, '*', '*', 4]
+[0, 3, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 9 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 4, 4, 3, 2, 3]
+[0, '*', '*', 3, 4, 1]
+[0, 1, 4, 2, 2, 4]
+[2, 4, 4, 0, 0, 3]
+[3, 4, 3, '*', '*', 4]
+[0, 1, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 10 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [4, 1, 3, 3, 3, 4]
+[0, 0, '*', 2, 2, '*']
+[1, 4, 4, 0, 3, 4]
+[2, 0, 0, 0, 4, 0]
+['*', 4, '*', 4, 2, 4]
+[0, 2, 0, 3, 2, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 11 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 0, 4, 0]
+['*', 3, '*', 1, 1, 1]
+[1, 0, 2, 3, 3, 4]
+[1, 4, 3, 1, 4, 2]
+[3, 4, '*', 4, 2, '*']
+[0, 2, 0, 0, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 12 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 3, 1, 4, 4, 4]
+[0, 4, '*', 0, 3, 3]
+[4, 3, 4, 1, 2, 3]
+[0, 0, 3, 4, 3, 0]
+[3, '*', 3, 4, '*', 4]
+[0, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 13 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 3, 1, 4, 4, 4]
+['*', 4, 4, '*', 3, 3]
+[4, 2, 4, 1, 3, 3]
+[0, 0, 3, 4, 3, 0]
+['*', 4, 3, '*', 2, 4]
+[0, 1, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 14 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [0, 3, 4, 3, 3, 3]
+[0, '*', 4, 2, '*', 0]
+[1, 2, 2, 0, 3, 0]
+[3, 4, 4, 1, 4, 0]
+[1, '*', '*', 4, 2, 1]
+[0, 3, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 15 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 4, 0, 1]
+[1, 4, '*', 4, 4, 2]
+[1, 1, 4, 2, 3, 3]
+[2, 4, 0, 0, 0, 3]
+['*', 4, 3, 4, '*', 4]
+[0, 3, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 16 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 1, 0, 1]
+[1, 4, '*', '*', 4, 2]
+[4, 0, 4, 2, 3, 3]
+[2, 3, 0, 0, 0, 3]
+[3, 4, '*', 4, '*', 4]
+[0, 2, 0, 4, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 17 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 4, 4, 4, 4, 0]
+[1, 4, '*', 2, 1, '*']
+[3, 3, 2, 0, 2, 1]
+[0, 1, 4, 0, 2, 2]
+['*', '*', 3, 4, 2, 1]
+[0, 0, 0, 1, 4, 4]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 18 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 4, 4, 1, 4, 0]
+[1, '*', 3, 2, 1, '*']
+[2, 3, 2, 0, 4, 1]
+[0, 1, 1, 0, 3, 2]
+[1, '*', '*', 4, 2, 1]
+[0, 0, 4, 1, 4, 4]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 19 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 4, 0, 0, 1, 3]
+[3, 0, '*', 3, 4, '*']
+[0, 0, 2, 2, 2, 1]
+[4, 2, 2, 3, 1, 4]
+[0, '*', 3, '*', 3, 0]
+[0, 2, 0, 4, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 20 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 4, 1, 4, 1, 4]
+[0, 4, 4, '*', 3, 3]
+[4, 2, 4, 3, 2, 3]
+[0, 0, 3, 3, 3, 0]
+[3, '*', 3, 4, '*', 4]
+[0, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 21 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 3, 0, 1]
+[1, '*', 3, '*', 4, 2]
+[4, 1, 4, 2, 0, 3]
+[2, 4, 1, 0, 0, 3]
+[3, '*', 3, 4, '*', 4]
+[0, 2, 2, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 22 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 0, 4, 0]
+[3, 3, 4, '*', '*', 1]
+[1, 0, 2, 1, 4, 4]
+[1, 4, 3, 4, 4, 2]
+['*', 4, 3, '*', 2, 4]
+[0, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 23 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 3, 4, 0, 1]
+['*', 1, '*', 3, 2, 2]
+[0, 4, 3, 3, 0, 3]
+[4, 1, 1, 4, 4, 2]
+[3, 4, 3, '*', '*', 4]
+[0, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 24 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [1, 2, 1, 1, 0, 3]
+[3, '*', 4, 1, '*', 4]
+[0, 4, 3, 3, 4, 1]
+[1, 0, 3, 4, 3, 0]
+[3, 4, 3, 4, '*', '*']
+[0, 2, 0, 4, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 25 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 2, 0, 4, 1, 1]
+[4, '*', 4, '*', 2, 2]
+[1, 4, 3, 3, 0, 3]
+[2, 1, 1, 4, 4, 2]
+[3, 4, 3, '*', 2, 4]
+[0, 2, 0, 4, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 26 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [3, 2, 0, 4, 0, 1]
+[1, '*', 3, 4, '*', 2]
+[4, 1, 4, 1, 3, 3]
+[2, 4, 3, 0, 0, 3]
+[3, '*', '*', 4, 2, 4]
+[0, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 27 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [4, 4, 4, 1, 4, 0]
+[1, 4, 3, 2, '*', '*']
+[4, 3, 2, 0, 4, 1]
+[0, 1, 1, 1, 2, 2]
+[1, '*', 3, 4, '*', 1]
+[4, 0, 0, 1, 4, 4]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 28 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [2, 4, 0, 4, 0, 1]
+[4, 1, 4, '*', 2, 2]
+[0, 4, 3, 3, 0, 3]
+[4, 3, 1, 4, 4, 2]
+[3, '*', 3, 4, '*', 4]
+[0, 2, 0, 3, 2, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 29 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [4, 1, 3, 3, 0, 4]
+[0, '*', 1, '*', 2, 1]
+[4, 4, 4, 0, 2, 4]
+[2, 2, 0, 0, 3, 0]
+[3, '*', 3, '*', 2, 4]
+[4, 2, 0, 3, 3, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
+<pre>
+ 30 užduotis 
+Žodis, parašytas abėcėlės 
+ABCDEĖFGHIYJKLMNOPRSŠTUVZ
+ raidėmis buvo koduotas Hamingo H_5(2)  kodu.
+Naudota generuojanti matrica 
+[[1, 0, 0, 0, 4, 1], [0, 1, 0, 0, 3, 4], [0, 0, 1, 0, 4, 3], [0, 0, 0, 1, 4, 4]]
+Kanale arba vienas simbolis išsikraipė, arba vienas ar du išsitrynė.
+ Gauti iš kanalo žodžiai:
+ [0, 3, 2, 3, 3, 3]
+[0, 0, 4, '*', 4, '*']
+[1, 2, 1, 0, 3, 0]
+[1, 4, 4, 1, 4, 0]
+[1, '*', 3, '*', 2, 1]
+[0, 2, 0, 3, 1, 0]
+Ištaisykite iškraipymus ir atkurkite siųstą žodį
+
+</pre>
+#
